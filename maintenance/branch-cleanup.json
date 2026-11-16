@@ -1,0 +1,26 @@
+{
+  "verified_at_utc": "2026-11-16T12:10:08.529346+00:00",
+  "remote_branches_kept": [
+    "archive/full-project-2026-11-16",
+    "codex/embed-qlib-source",
+    "main"
+  ],
+  "remote_branches_deleted": [
+    "codex/a-input-modules-84d8cc8",
+    "composition_module"
+  ],
+  "archived_branch_tags": {
+    "archive/branches/2026-11-16/a-input-modules": "84d8cc84efd159576065e771b8929c2fc6531b54",
+    "archive/branches/2026-11-16/composition-module": "09c66c02c6449f1e05675c2d0f8848fe4da3b8e1"
+  },
+  "open_pr_branch_kept": "https://github.com/starrrkittty/jinyicapital-2026-e2e/pull/4",
+  "local_archive_branches": {
+    "work/repo-publication": "archive/2026-11-16",
+    "work/github-upload": "archive/full-project-2026-11-16"
+  },
+  "external_wsl_worktree": "retained; clean detached HEAD 6c7efc999babcb5ae9551b5448aa64c0a3a21749",
+  "local_git_bundle": "deliverables/ptop-git-after-publication-cleanup-20261116.bundle",
+  "removed_file_count": 81,
+  "removed_bytes": 3619263.0,
+  "support_zip_sha256": "f9b836666c70524fc3bb2c7f27e9e550f7590f85ec64e52883426c72f9998aef"
+}

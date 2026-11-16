@@ -1,0 +1,256 @@
+{
+  "deleted": [
+    {
+      "path": "work/full-upload-staging",
+      "files": 0,
+      "bytes": null
+    },
+    {
+      "path": "work/python-temp",
+      "files": 0,
+      "bytes": null
+    },
+    {
+      "path": "work/restore-script-check",
+      "files": 8,
+      "bytes": 461.0
+    },
+    {
+      "path": "work/upload-inspection",
+      "files": 8,
+      "bytes": 133273.0
+    },
+    {
+      "path": "work/github-upload/my-part/work",
+      "files": 20,
+      "bytes": 3027944.0
+    },
+    {
+      "path": "work/archive_inventory.py",
+      "files": 1,
+      "bytes": 6833.0
+    },
+    {
+      "path": "work/bc-handoff-receipt.json",
+      "files": 1,
+      "bytes": 356.0
+    },
+    {
+      "path": "work/check_competition_document.py",
+      "files": 1,
+      "bytes": 1604.0
+    },
+    {
+      "path": "work/check_full_upload_documents.py",
+      "files": 1,
+      "bytes": 1501.0
+    },
+    {
+      "path": "work/check_source_package.py",
+      "files": 1,
+      "bytes": 3783.0
+    },
+    {
+      "path": "work/check_staged_github_upload.py",
+      "files": 1,
+      "bytes": 1042.0
+    },
+    {
+      "path": "work/cleanup_publication_workspace.ps1",
+      "files": 1,
+      "bytes": 2836.0
+    },
+    {
+      "path": "work/clean_archive.ps1",
+      "files": 1,
+      "bytes": 4434.0
+    },
+    {
+      "path": "work/embedded-environment.json",
+      "files": 1,
+      "bytes": 1338.0
+    },
+    {
+      "path": "work/embedded-package-report.json",
+      "files": 1,
+      "bytes": 535.0
+    },
+    {
+      "path": "work/embedded-qlib-root-tests.xml",
+      "files": 1,
+      "bytes": 26287.0
+    },
+    {
+      "path": "work/finalize_full_upload.py",
+      "files": 1,
+      "bytes": 6169.0
+    },
+    {
+      "path": "work/finalize_github_upload.py",
+      "files": 1,
+      "bytes": 3368.0
+    },
+    {
+      "path": "work/full-upload-assets.json",
+      "files": 1,
+      "bytes": 1264.0
+    },
+    {
+      "path": "work/full-upload-complete-assets.json",
+      "files": 1,
+      "bytes": 8529.0
+    },
+    {
+      "path": "work/full-upload-document-verification.json",
+      "files": 1,
+      "bytes": 223.0
+    },
+    {
+      "path": "work/full-upload-inventory.json",
+      "files": 1,
+      "bytes": 54135.0
+    },
+    {
+      "path": "work/full-upload-large-assets.json",
+      "files": 1,
+      "bytes": 592.0
+    },
+    {
+      "path": "work/full-upload-snapshot-verification.json",
+      "files": 1,
+      "bytes": 122216.0
+    },
+    {
+      "path": "work/full-upload-stream-state.json",
+      "files": 1,
+      "bytes": 14010.0
+    },
+    {
+      "path": "work/full_upload_release_notes.md",
+      "files": 1,
+      "bytes": 898.0
+    },
+    {
+      "path": "work/handoff-dependency-check.json",
+      "files": 1,
+      "bytes": 15170.0
+    },
+    {
+      "path": "work/inspect_github_upload.py",
+      "files": 1,
+      "bytes": 2664.0
+    },
+    {
+      "path": "work/inspect_reference_data.py",
+      "files": 1,
+      "bytes": 3880.0
+    },
+    {
+      "path": "work/inventory_full_upload.py",
+      "files": 1,
+      "bytes": 1729.0
+    },
+    {
+      "path": "work/local-data-tests.xml",
+      "files": 1,
+      "bytes": 24756.0
+    },
+    {
+      "path": "work/local-final-tests.xml",
+      "files": 1,
+      "bytes": 25148.0
+    },
+    {
+      "path": "work/no-qlib-tests.xml",
+      "files": 1,
+      "bytes": 27696.0
+    },
+    {
+      "path": "work/parallel_remaining_release_upload.py",
+      "files": 1,
+      "bytes": 1761.0
+    },
+    {
+      "path": "work/pr-84d8cc8.md",
+      "files": 1,
+      "bytes": 407.0
+    },
+    {
+      "path": "work/prepare_full_upload_snapshot.ps1",
+      "files": 1,
+      "bytes": 986.0
+    },
+    {
+      "path": "work/prepare_github_upload.ps1",
+      "files": 1,
+      "bytes": 2939.0
+    },
+    {
+      "path": "work/prepare_publication_cleanup.py",
+      "files": 1,
+      "bytes": 2131.0
+    },
+    {
+      "path": "work/read_competition_sources.py",
+      "files": 1,
+      "bytes": 3766.0
+    },
+    {
+      "path": "work/stream_full_release_upload.py",
+      "files": 1,
+      "bytes": 8256.0
+    },
+    {
+      "path": "work/team_report.md",
+      "files": 1,
+      "bytes": 9883.0
+    },
+    {
+      "path": "work/test_full_archive_restore.py",
+      "files": 1,
+      "bytes": 3099.0
+    },
+    {
+      "path": "work/upload-verification.json",
+      "files": 1,
+      "bytes": 1607.0
+    },
+    {
+      "path": "work/upload_full_release_assets.py",
+      "files": 1,
+      "bytes": 7131.0
+    },
+    {
+      "path": "work/validation-final.xml",
+      "files": 1,
+      "bytes": 17915.0
+    },
+    {
+      "path": "work/validation.xml",
+      "files": 1,
+      "bytes": 19238.0
+    },
+    {
+      "path": "work/verify_full_publication.py",
+      "files": 1,
+      "bytes": 4679.0
+    },
+    {
+      "path": "work/verify_full_snapshot.py",
+      "files": 1,
+      "bytes": 2048.0
+    },
+    {
+      "path": "work/verify_github_upload.py",
+      "files": 1,
+      "bytes": 6185.0
+    },
+    {
+      "path": "work/verify_published_github_upload.py",
+      "files": 1,
+      "bytes": 2558.0
+    }
+  ],
+  "preserved_zip": "deliverables/ptop-publication-support-20261116.zip",
+  "source_and_data_retained": true
+}

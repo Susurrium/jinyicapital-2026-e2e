@@ -1,0 +1,475 @@
+{
+  "support_archive": "deliverables/ptop-publication-support-20261116.zip",
+  "support_archive_sha256": "f9b836666c70524fc3bb2c7f27e9e550f7590f85ec64e52883426c72f9998aef",
+  "preserved_files": [
+    {
+      "path": "reports/github-full-upload-20261116.json",
+      "bytes": 1012,
+      "sha256": "1bbb4c358eb3a7f02c058ed653745e155354217c37e1be1b6b948a3d58d83326"
+    },
+    {
+      "path": "reports/github-upload-20261116.json",
+      "bytes": 651,
+      "sha256": "95cbb178208d60fee5abd693737d2fbb098385a6a3fc656247d3a915b443b85e"
+    },
+    {
+      "path": "work/archive_inventory.py",
+      "bytes": 6833,
+      "sha256": "1a288c60ec6ddba9e07668d11f7906870201748b517e06a846b420ab4cc1d58e"
+    },
+    {
+      "path": "work/bc-handoff-receipt.json",
+      "bytes": 356,
+      "sha256": "329d91ff574dba68c8a3ff6e72d58575ebd280941cef41091c6b1d108a2aaf4f"
+    },
+    {
+      "path": "work/check_competition_document.py",
+      "bytes": 1604,
+      "sha256": "ce934183e80e378929515e8d10ce6bd092d68d116ff1f7d70878a6df581ea264"
+    },
+    {
+      "path": "work/check_full_upload_documents.py",
+      "bytes": 1501,
+      "sha256": "aab52ebee71d79cf88a510502fa46e4ce61917d08e7c6d2d15410658c880c20f"
+    },
+    {
+      "path": "work/check_source_package.py",
+      "bytes": 3783,
+      "sha256": "a3a72b55481e4d990b99a9ba8781d94b7322ddfccc16b8cd5d90fadb3c3ff4c8"
+    },
+    {
+      "path": "work/check_staged_github_upload.py",
+      "bytes": 1042,
+      "sha256": "da7e4c92b5a24311730974560d0f3862a0896ecd8c75fc70dc90e22cb71e952d"
+    },
+    {
+      "path": "work/clean_archive.ps1",
+      "bytes": 4434,
+      "sha256": "bbd53fc9d4cde01580b15d30f5e03da1753d7a2031ffd18a7321245e23d83a87"
+    },
+    {
+      "path": "work/cleanup_publication_workspace.ps1",
+      "bytes": 2836,
+      "sha256": "25bb21d4796ad56b4348ae2425daa553acc62aed966848eb7107c48095de0a04"
+    },
+    {
+      "path": "work/embedded-environment.json",
+      "bytes": 1338,
+      "sha256": "fbea13ba8af6a5e6395be3cf9ff0566924e4add96e6eb3942488186d081505de"
+    },
+    {
+      "path": "work/embedded-package-report.json",
+      "bytes": 535,
+      "sha256": "90da4c5260c61f8eb56d6ca8e516b04a81e9a69e7e8c496467c4cafcaca4c838"
+    },
+    {
+      "path": "work/embedded-qlib-root-tests.xml",
+      "bytes": 26287,
+      "sha256": "9f923357447c865db96823b6c68b2ed6d8ccecd9594a0b427e0f7827f5822aaa"
+    },
+    {
+      "path": "work/finalize_full_upload.py",
+      "bytes": 6169,
+      "sha256": "6f4e7cd154be478854c56a7368305a32b0f29f90cf360a855d6944baf1f8df28"
+    },
+    {
+      "path": "work/finalize_github_upload.py",
+      "bytes": 3368,
+      "sha256": "4984d59f7bde6b55d677323b46c4fa39666208b971867cbbeaf63877efa516cd"
+    },
+    {
+      "path": "work/full-upload-assets.json",
+      "bytes": 1264,
+      "sha256": "3e90c360a4c7237f759f3f97a77427c7e2a510e854701a54ed87fa50664e9c5f"
+    },
+    {
+      "path": "work/full-upload-complete-assets.json",
+      "bytes": 8529,
+      "sha256": "41fc4b379cbbea2b677463397c0493d1a59b99409e2c41b598a8158777c2470d"
+    },
+    {
+      "path": "work/full-upload-document-verification.json",
+      "bytes": 223,
+      "sha256": "9c1f2620bcaeb5e2c9c0f86cbfdca9a178f73c4591a29c280d82170723b33bd2"
+    },
+    {
+      "path": "work/full-upload-inventory.json",
+      "bytes": 54135,
+      "sha256": "b93b32914c5766b96a5133999b9e4b9959eca63ade8622dcc456f5c2a8857405"
+    },
+    {
+      "path": "work/full-upload-large-assets.json",
+      "bytes": 592,
+      "sha256": "9bc95db5b667fc722fb49d81e4a1f47429a9263b8526a4eb4aeb8f6df017b44b"
+    },
+    {
+      "path": "work/full-upload-snapshot-verification.json",
+      "bytes": 122216,
+      "sha256": "e8d5b3136762c5541e7c425741aed92f87bc495831478c1d98c3196df65ac6b2"
+    },
+    {
+      "path": "work/full-upload-stream-state.json",
+      "bytes": 14010,
+      "sha256": "9b292ad1ec6b772c49437deeebefb26ba09f4221ca4faff1addca9d03725de16"
+    },
+    {
+      "path": "work/full_upload_release_notes.md",
+      "bytes": 898,
+      "sha256": "9e182f0e9531579ac3dbf31a08a8640a36bab665e01ca6f56e78610d283c856a"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/bundle/manifest.json",
+      "bytes": 1589,
+      "sha256": "37731918de738d26aa7db947d7f9f06bc41d855e9c2180e16375d926a8022175"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/bundle/model.json",
+      "bytes": 1203056,
+      "sha256": "53a5189497e40c8322f1e7ccfd5e55b701d19c02b24922eb8f2d3fecb3082320"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/bundle/preprocessor.json",
+      "bytes": 3079,
+      "sha256": "efa22817513652f4cdc69da2533ffece0efe105f6c0d2a85dbb1e793a1d2c1ac"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/inputs.npz",
+      "bytes": 12376,
+      "sha256": "a4135019447d50fe8d6d93a1abae6e79933c23dcd0cefc4deaf3bb7c63bf0fa2"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/observed.parquet",
+      "bytes": 13933,
+      "sha256": "71e1ddccf4043a37f221a4c022fe297dd29ae6e4bd0730d5b12f9d014fb062e0"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/raw_values.parquet",
+      "bytes": 22003,
+      "sha256": "d8637d6b07d534747c27258366d064080da38336a6a12ac64f18f6abf8a7d70c"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/reload_report.json",
+      "bytes": 49,
+      "sha256": "80917aa285e4c770ed294a122578a966841e0edbace214555a9f372fa4669e0a"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/report.json",
+      "bytes": 741,
+      "sha256": "e656f5bbab0d8510d2b2e8ed004f1db1442230a584e36721e0f424152f18cc52"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/scale_diagnostics.json",
+      "bytes": 237330,
+      "sha256": "307796c0736fc803c5af584b85f687b516c841dd540f185c9c05559987dcdc54"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check/transformed.parquet",
+      "bytes": 19816,
+      "sha256": "35fdeb45a8cd0b9cf2d7c7f791f9ce8ec666b0f06671b3f1c3c3963a7bc45136"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/bundle/manifest.json",
+      "bytes": 1589,
+      "sha256": "37731918de738d26aa7db947d7f9f06bc41d855e9c2180e16375d926a8022175"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/bundle/model.json",
+      "bytes": 1203056,
+      "sha256": "53a5189497e40c8322f1e7ccfd5e55b701d19c02b24922eb8f2d3fecb3082320"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/bundle/preprocessor.json",
+      "bytes": 3079,
+      "sha256": "efa22817513652f4cdc69da2533ffece0efe105f6c0d2a85dbb1e793a1d2c1ac"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/inputs.npz",
+      "bytes": 12376,
+      "sha256": "a4135019447d50fe8d6d93a1abae6e79933c23dcd0cefc4deaf3bb7c63bf0fa2"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/observed.parquet",
+      "bytes": 13933,
+      "sha256": "71e1ddccf4043a37f221a4c022fe297dd29ae6e4bd0730d5b12f9d014fb062e0"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/raw_values.parquet",
+      "bytes": 22003,
+      "sha256": "d8637d6b07d534747c27258366d064080da38336a6a12ac64f18f6abf8a7d70c"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/reload_report.json",
+      "bytes": 49,
+      "sha256": "80917aa285e4c770ed294a122578a966841e0edbace214555a9f372fa4669e0a"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/report.json",
+      "bytes": 741,
+      "sha256": "49e647140bb4333c610f3631c2b21821b3916cbb9b92ef3dd8e7599bff98f6f0"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/scale_diagnostics.json",
+      "bytes": 237330,
+      "sha256": "307796c0736fc803c5af584b85f687b516c841dd540f185c9c05559987dcdc54"
+    },
+    {
+      "path": "work/github-upload/my-part/work/synthetic-check-final/transformed.parquet",
+      "bytes": 19816,
+      "sha256": "35fdeb45a8cd0b9cf2d7c7f791f9ce8ec666b0f06671b3f1c3c3963a7bc45136"
+    },
+    {
+      "path": "work/handoff-dependency-check.json",
+      "bytes": 15170,
+      "sha256": "a9818d043e405b53924952bcd5054fb3c912fa99f78c6cc16375d928a4700d65"
+    },
+    {
+      "path": "work/inspect_github_upload.py",
+      "bytes": 2664,
+      "sha256": "8bb65dcb88165cefa163535f01e398b7e55ba0ad458a2234d62dbdf9578a13eb"
+    },
+    {
+      "path": "work/inspect_reference_data.py",
+      "bytes": 3880,
+      "sha256": "1a0417feac12e93d438e2ef44d6496b7d5ae7347b01d9e440e904609108bcbab"
+    },
+    {
+      "path": "work/inventory_full_upload.py",
+      "bytes": 1729,
+      "sha256": "08b7e3dcc2e4b15845bbc1a6dd92db7a256b74d7b34a5ad8d79752588f5d9984"
+    },
+    {
+      "path": "work/local-data-tests.xml",
+      "bytes": 24756,
+      "sha256": "f1cf216166e51fb7f7c9a0cfda923146f0321aa1220964aa92c37a175473de22"
+    },
+    {
+      "path": "work/local-final-tests.xml",
+      "bytes": 25148,
+      "sha256": "babee8d3b20c677b08624b3706a4d92dffc87e82a95d90c4bfe5ca4aa99c3dae"
+    },
+    {
+      "path": "work/no-qlib-tests.xml",
+      "bytes": 27696,
+      "sha256": "51008b87b7c10db5b50f30c7591e2a45e123c4cdbcaaa7210d45a03ed2b48f13"
+    },
+    {
+      "path": "work/parallel_remaining_release_upload.py",
+      "bytes": 1761,
+      "sha256": "aaccdb0c18c0ec01b4264756e92dad5f542260c9cf2b9fe1a15e1c4a8bbbb3d6"
+    },
+    {
+      "path": "work/pr-84d8cc8.md",
+      "bytes": 407,
+      "sha256": "a514d53b5b57624a5abf6fed64a852f32011442ade06d63338e05d29d84ba930"
+    },
+    {
+      "path": "work/prepare_full_upload_snapshot.ps1",
+      "bytes": 986,
+      "sha256": "496e49a784ab729a78404f5df846480db45f647129ca1b3ac4f07b8d696bed4b"
+    },
+    {
+      "path": "work/prepare_github_upload.ps1",
+      "bytes": 2939,
+      "sha256": "5c46ba23fcde1f51e70c49d02c7ee42c0ade9d25fe8dd650d642aa6dc03ea2f6"
+    },
+    {
+      "path": "work/prepare_publication_cleanup.py",
+      "bytes": 2131,
+      "sha256": "1c89d05a0806f9eb7c5433ff1fc1a05d267b024322644b39aba02188156e40a5"
+    },
+    {
+      "path": "work/read_competition_sources.py",
+      "bytes": 3766,
+      "sha256": "a661b20ad3055a26e2d70868b553358a6a38c03614edf076b5d813174ed6c428"
+    },
+    {
+      "path": "work/restore-script-check/archive/document.txt",
+      "bytes": 24,
+      "sha256": "bb4a256eb321ae0ba2767b72bf517d0357bc0f88cf75a0f23797367d4d8850fa"
+    },
+    {
+      "path": "work/restore-script-check/assets/part0",
+      "bytes": 11,
+      "sha256": "2af8964d3c9fbf3c9bec32712de65e3841da0cdef6d3cd3b9f2b83a3dff8b636"
+    },
+    {
+      "path": "work/restore-script-check/assets/part1",
+      "bytes": 12,
+      "sha256": "938e745c6e22834308a669dab44534eacd776d06ca016b176c872723efe7bd63"
+    },
+    {
+      "path": "work/restore-script-check/bad-checksum/data/sample.bin",
+      "bytes": 11,
+      "sha256": "2af8964d3c9fbf3c9bec32712de65e3841da0cdef6d3cd3b9f2b83a3dff8b636"
+    },
+    {
+      "path": "work/restore-script-check/bad-checksum/docs/document.txt",
+      "bytes": 24,
+      "sha256": "bb4a256eb321ae0ba2767b72bf517d0357bc0f88cf75a0f23797367d4d8850fa"
+    },
+    {
+      "path": "work/restore-script-check/restored/data/sample.bin",
+      "bytes": 23,
+      "sha256": "8dafb28d522c37ac899b647e54ab52bc22ce61fa5c273dd724d750774bdb9956"
+    },
+    {
+      "path": "work/restore-script-check/restored/docs/document.txt",
+      "bytes": 24,
+      "sha256": "bb4a256eb321ae0ba2767b72bf517d0357bc0f88cf75a0f23797367d4d8850fa"
+    },
+    {
+      "path": "work/restore-script-check/result.json",
+      "bytes": 332,
+      "sha256": "6cfe2d7d4ab15fd2400ed9d9ac1d0fde7d110d0adf8996deea22c6c05280c74c"
+    },
+    {
+      "path": "work/stream_full_release_upload.py",
+      "bytes": 8256,
+      "sha256": "cb4f99df031e93b524fac332274571a18c418e282fc5164a18c5f4eef3c3a3ae"
+    },
+    {
+      "path": "work/team_report.md",
+      "bytes": 9883,
+      "sha256": "2028b1db79eefa8edf37e5e197c4ec6407bab9752439238559c316d6193a50ad"
+    },
+    {
+      "path": "work/test_full_archive_restore.py",
+      "bytes": 3099,
+      "sha256": "b2e004d25208fd8a4f60166374b6769a56f675703910832534964f7b6b86e927"
+    },
+    {
+      "path": "work/upload-inspection/01_比赛规则与参赛流程.docx.txt",
+      "bytes": 4440,
+      "sha256": "8575b151030e4c9116c0dc628502736aeba7e9d131711cc6313f0164e347f9b7"
+    },
+    {
+      "path": "work/upload-inspection/02_量化名词与指标解释.docx.txt",
+      "bytes": 9825,
+      "sha256": "37646c712804ac7833816c5feedaeb168558b47271a63a559533c6ed0a018668"
+    },
+    {
+      "path": "work/upload-inspection/03_模型架构与训练方案.docx.txt",
+      "bytes": 8062,
+      "sha256": "d73a8621cc86f265af75b37de8d820650e71383fd3ff573949824b884bb707ba"
+    },
+    {
+      "path": "work/upload-inspection/04_团队分工与开发日程.docx.txt",
+      "bytes": 3771,
+      "sha256": "533cb5d125d68da7c28355291948643f29df9d1b8fb38bbc3b741a441965ea6c"
+    },
+    {
+      "path": "work/upload-inspection/archives.json",
+      "bytes": 19896,
+      "sha256": "fb807288f699fc296b9673ab4c82e52a19249ecd444f1a53a5e5bd789ebd397f"
+    },
+    {
+      "path": "work/upload-inspection/ptop-A-to-BC-20261011.zip.txt",
+      "bytes": 70184,
+      "sha256": "df2edb44bc24e233f570ec8f58ec57beaa600fc544db26659a675e046bc70e3f"
+    },
+    {
+      "path": "work/upload-inspection/ptop-source-20261014.zip.txt",
+      "bytes": 7861,
+      "sha256": "2443fce3a6820dcb5ae3ac0446924e329a992aac515711f5a62896bcbb748082"
+    },
+    {
+      "path": "work/upload-inspection/端到端量化比赛入门与实施指南.docx.txt",
+      "bytes": 9234,
+      "sha256": "63dae00ef0a991dbec57189556afe83c5b2f0464578bba25243ee7239b6b0eea"
+    },
+    {
+      "path": "work/upload-verification.json",
+      "bytes": 1607,
+      "sha256": "affe8cd59b27532ae0f929e0255a768bb1f65efda8723849259c9870888e0d35"
+    },
+    {
+      "path": "work/upload_full_release_assets.py",
+      "bytes": 7131,
+      "sha256": "bc047e964551ae8b0c8710fc468f251dd7ffcd420298d5e1a00608cd7f58cf4e"
+    },
+    {
+      "path": "work/validation-final.xml",
+      "bytes": 17915,
+      "sha256": "5df09b0b3cf5bed79b10c6002deabbd9a5a3f7e8c14a30a41b7f97d8722fd83e"
+    },
+    {
+      "path": "work/validation.xml",
+      "bytes": 19238,
+      "sha256": "5af5068e97b9e553a0ffaf030123de5fff986003c864b0ef5264a7ecd30b88a0"
+    },
+    {
+      "path": "work/verify_full_publication.py",
+      "bytes": 4679,
+      "sha256": "88a48a792bb1031c54ed4112fe08403d8e11bef5c56df99713f2b52e331d83c9"
+    },
+    {
+      "path": "work/verify_full_snapshot.py",
+      "bytes": 2048,
+      "sha256": "57e9f9f8bfe2d97902793c469b449dd10b5e0481a25a73674c9100d8af55d989"
+    },
+    {
+      "path": "work/verify_github_upload.py",
+      "bytes": 6185,
+      "sha256": "4a44546eab8f3d051445edb5783e9d76702fece4d76cbd7baf6e3699bfed8ff1"
+    },
+    {
+      "path": "work/verify_published_github_upload.py",
+      "bytes": 2558,
+      "sha256": "ca0765e8b8e1b39bacd52264fa5f5d8b2967e23805a97064a66276d1f0891c22"
+    }
+  ],
+  "cleanup_directories": [
+    "work/full-upload-staging",
+    "work/python-temp",
+    "work/restore-script-check",
+    "work/upload-inspection",
+    "work/github-upload/my-part/work"
+  ],
+  "cleanup_work_files": [
+    "work/archive_inventory.py",
+    "work/bc-handoff-receipt.json",
+    "work/check_competition_document.py",
+    "work/check_full_upload_documents.py",
+    "work/check_source_package.py",
+    "work/check_staged_github_upload.py",
+    "work/cleanup_publication_workspace.ps1",
+    "work/clean_archive.ps1",
+    "work/embedded-environment.json",
+    "work/embedded-package-report.json",
+    "work/embedded-qlib-root-tests.xml",
+    "work/finalize_full_upload.py",
+    "work/finalize_github_upload.py",
+    "work/full-upload-assets.json",
+    "work/full-upload-complete-assets.json",
+    "work/full-upload-document-verification.json",
+    "work/full-upload-inventory.json",
+    "work/full-upload-large-assets.json",
+    "work/full-upload-snapshot-verification.json",
+    "work/full-upload-stream-state.json",
+    "work/full_upload_release_notes.md",
+    "work/handoff-dependency-check.json",
+    "work/inspect_github_upload.py",
+    "work/inspect_reference_data.py",
+    "work/inventory_full_upload.py",
+    "work/local-data-tests.xml",
+    "work/local-final-tests.xml",
+    "work/no-qlib-tests.xml",
+    "work/parallel_remaining_release_upload.py",
+    "work/pr-84d8cc8.md",
+    "work/prepare_full_upload_snapshot.ps1",
+    "work/prepare_github_upload.ps1",
+    "work/prepare_publication_cleanup.py",
+    "work/read_competition_sources.py",
+    "work/stream_full_release_upload.py",
+    "work/team_report.md",
+    "work/test_full_archive_restore.py",
+    "work/upload-verification.json",
+    "work/upload_full_release_assets.py",
+    "work/validation-final.xml",
+    "work/validation.xml",
+    "work/verify_full_publication.py",
+    "work/verify_full_snapshot.py",
+    "work/verify_github_upload.py",
+    "work/verify_published_github_upload.py"
+  ]
+}

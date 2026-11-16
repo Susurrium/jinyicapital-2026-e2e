@@ -39,3 +39,7 @@
 - `FULL_UPLOAD_VERIFICATION.json`：补齐资料后的文件、原始快照和 Release 附件核验记录。
 
 完整目录恢复命令及校验方式见 [恢复说明](archive-tools/README.md)。
+
+## 维护记录
+
+[maintenance/](maintenance/README.md) 保存上传后的工作区及分支清理记录，以及上传辅助脚本与核验记录的保全 ZIP。完整数据归档 Release 对应 `full-archive-2026-11-16` 标签；分支上的后续提交记录归档维护。
