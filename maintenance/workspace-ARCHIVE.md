@@ -28,9 +28,9 @@
 
 `deliverables/ptop-git-before-archive-20261116.bundle` 保存整理前的全部 refs，包括旧本地 main。该 main 已包含在集成分支的历史中。`deliverables/ptop-repository-20261116.bundle` 保存整理后的全部 refs；同名 ZIP 保存该 tag 对应的完整受版本控制文件。
 
-完整资料已推送至 `Susurrium/jinyicapital-2026-e2e` 的 `archive/full-project-2026-11-16` 分支，大型文件位于 `full-archive-2026-11-16` Release。原始资料快照保留当时内容。
+完整资料保存在 `Susurrium/jinyicapital-2026-e2e` 的 `main` 分支，大型文件位于 `full-archive-2026-11-16` Release。原始资料快照保留当时内容。
 
-远端旧开发分支 `codex/a-input-modules-84d8cc8`、`composition_module` 已分别保存为 `archive/branches/2026-11-16/a-input-modules`、`archive/branches/2026-11-16/composition-module` 标签，并删除对应分支。`main` 和关联上游 PR #4 的 `codex/embed-qlib-source` 保留。两个本地仓库均保留各自归档分支。
+远端旧开发分支 `codex/a-input-modules-84d8cc8`、`composition_module` 已分别保存为 `archive/branches/2026-11-16/a-input-modules`、`archive/branches/2026-11-16/composition-module` 标签，并删除对应分支。完整归档与开发历史合并至 `main`，完整归档分支合并前状态保存为 `archive/branches/2026-11-16/full-project` 标签；合并后删除该分支。关联上游 PR #4 的 `codex/embed-qlib-source` 保留。本地发布工作区使用 `main`，集成仓库继续保留原归档分支。核验记录见 `reports/branch-merge-20261116/`。
 
 注册的外部 WSL worktree 保留原位置和状态，清理范围限制在 `E:/PtoP/` 内。Git bundle 可在新目录通过 `git clone <bundle路径> <新目录>` 恢复独立仓库，原有本地文件不参与该恢复操作。
 

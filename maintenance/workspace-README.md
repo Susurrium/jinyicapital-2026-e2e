@@ -13,7 +13,7 @@
 
 `work/repo-publication/` 是需要保留的实际仓库。根目录以下使用说明适用于 A 的独立模块快照及其 v2 模型包。
 
-完整资料已发布至 [GitHub 归档分支](https://github.com/Susurrium/jinyicapital-2026-e2e/tree/archive/full-project-2026-11-16)，大型文件位于 [完整归档 Release](https://github.com/Susurrium/jinyicapital-2026-e2e/releases/tag/full-archive-2026-11-16)。本地数据与源码继续保留，上传辅助脚本和验证中间文件集中保存于 `deliverables/ptop-publication-support-20261116.zip`。
+完整资料已发布至 [GitHub main](https://github.com/Susurrium/jinyicapital-2026-e2e/tree/main)，大型文件位于 [完整归档 Release](https://github.com/Susurrium/jinyicapital-2026-e2e/releases/tag/full-archive-2026-11-16)。本地数据与源码继续保留，上传辅助脚本和验证中间文件集中保存于 `deliverables/ptop-publication-support-20261116.zip`。
 
 ## A 模块使用说明
 
