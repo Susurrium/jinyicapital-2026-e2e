@@ -1,0 +1,5 @@
+# PyTorch 构建和固定提交的 Qlib 单独安装，具体步骤见 docs/云端依赖.md。
+numpy==2.2.6
+pandas==2.2.3
+pyarrow==20.0.0
+psutil==7.2.2

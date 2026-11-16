@@ -1,0 +1,5 @@
+# 固定许可指纹依赖原始 LF 换行。
+**/QLIB-MIT.txt text eol=lf
+*.zip binary
+*.whl binary
+*.docx binary

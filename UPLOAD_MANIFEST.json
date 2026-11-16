@@ -1,0 +1,882 @@
+{
+  "algorithm": "SHA-256",
+  "self_excluded": "UPLOAD_MANIFEST.json",
+  "file_count": 175,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 114,
+      "sha256": "6389a2bccd63659574bbba9d5c8bffbfe1cf4588d863f7ea54175eb1dd64c552"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 256,
+      "sha256": "e265d216cdec84565284f8048efd0f1cd003e2bdfb93856472b5c5ca0858a59b"
+    },
+    {
+      "path": "ARCHIVE.md",
+      "bytes": 2300,
+      "sha256": "b3df8e3b8d93877187d93a75110709d543fd512cc98efcbf49adf46be5aadd76"
+    },
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.check.json",
+      "bytes": 539,
+      "sha256": "25f95aea57e566c363b10edf0c4eda9f4b976df5d2fa0d9f579707f7763eda65"
+    },
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.sha256",
+      "bytes": 93,
+      "sha256": "90cbff26ded9ca39b92341766c4209a4ac189cab602c6f2d35d31cca62eb267c"
+    },
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.zip",
+      "bytes": 681392,
+      "sha256": "78e659975f1f5a79566b7093dc00d2b0c8b2808b6de9b976f799ebc341423a06"
+    },
+    {
+      "path": "my-part/deliverables/ptop-source-20261014.zip",
+      "bytes": 58938,
+      "sha256": "224eeb97dc63fc2b001bf0715064c03b06bd1801baa58cc49cfb8a1bd74b919c"
+    },
+    {
+      "path": "my-part/docs/A成员数据与输入编码方案.md",
+      "bytes": 45660,
+      "sha256": "78dc77da4ad08bebe7155ccd5b7cc0ebd6f0377816c2a23270f09da1fc0e035a"
+    },
+    {
+      "path": "my-part/docs/内置Qlib组件验证.md",
+      "bytes": 831,
+      "sha256": "8cd6851656024164cf004d0e13e0232dc30038716b4390b16e1fe379a3d1b6b2"
+    },
+    {
+      "path": "my-part/docs/开发验证记录.md",
+      "bytes": 957,
+      "sha256": "42818e424187cc74f1b414fd69674c74345417099d574e50de5b381e872907dd"
+    },
+    {
+      "path": "my-part/docs/比赛规则与流程.md",
+      "bytes": 32600,
+      "sha256": "543696a2d62d796dc8e61b049609c89f4880cd7cd0be62f3d4fb158209d6dd8a"
+    },
+    {
+      "path": "my-part/handoff/.gitignore",
+      "bytes": 101,
+      "sha256": "33e0fc1f32b0302bfc7313ee0205ae5c12ae8b2f804a31fd76a231b8cd6d6ceb"
+    },
+    {
+      "path": "my-part/handoff/configs/first_run.json",
+      "bytes": 747,
+      "sha256": "df793106bb14ba3599737aa4f5d6265ee87bea2b4131c929f18248fd1956b2f0"
+    },
+    {
+      "path": "my-part/handoff/docs/B_C职责与接口.md",
+      "bytes": 18280,
+      "sha256": "9ccd736f5c9689df3368f745606a6d3414ec869ecd3483f4c9ea173140d2d592"
+    },
+    {
+      "path": "my-part/handoff/docs/云端依赖.md",
+      "bytes": 9165,
+      "sha256": "0c9327c2ead62ad68b8e078e886435143e5969f0addc9816b8521568e6739ae7"
+    },
+    {
+      "path": "my-part/handoff/docs/交付检查记录.md",
+      "bytes": 1000,
+      "sha256": "4d53c692016f1c37c1b005f46d2d99e7deebe61f3352ef15a92d0e79f4787b52"
+    },
+    {
+      "path": "my-part/handoff/examples/__init__.py",
+      "bytes": 13,
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb"
+    },
+    {
+      "path": "my-part/handoff/examples/cloud_bridge.py",
+      "bytes": 13018,
+      "sha256": "5e70c6838afbd64622f704937c024f523f6002e7cf9e2b53f9d15c42b600f740"
+    },
+    {
+      "path": "my-part/handoff/pyproject.toml",
+      "bytes": 664,
+      "sha256": "642b5382953bc684076a8333ac6abdb306d5921a7f7b7fda41d6f5e5482555fd"
+    },
+    {
+      "path": "my-part/handoff/README.md",
+      "bytes": 5777,
+      "sha256": "eae8011b5807d5eaead3a1dd5c15651d6d56f5594f901243dab79b729c7b96d2"
+    },
+    {
+      "path": "my-part/handoff/requirements-core.txt",
+      "bytes": 152,
+      "sha256": "1821278e8d3e5317dc35091e766cd3107ad8b32b2a64e0848a31d08abd84d0d9"
+    },
+    {
+      "path": "my-part/handoff/requirements-test.txt",
+      "bytes": 39,
+      "sha256": "c4cb0be67f196b8f9906881b213867b75b677bde781a35c0f30044ac7db7aad0"
+    },
+    {
+      "path": "my-part/handoff/scripts/prepare_environment.py",
+      "bytes": 3718,
+      "sha256": "90609f27effb15555b0be8b3e2e42c2aaaa544c3f1cca30e6503e0a8548895e6"
+    },
+    {
+      "path": "my-part/handoff/third_party/README.md",
+      "bytes": 1265,
+      "sha256": "fb5d689176519b629a50fffcfb17f02437e86b6008caa938f385ce80ddcc6382"
+    },
+    {
+      "path": "my-part/pyproject.toml",
+      "bytes": 691,
+      "sha256": "66d6380df8c9c2169885155b9545ddd55c7cda5767c2e5564931a2b131277133"
+    },
+    {
+      "path": "my-part/README.md",
+      "bytes": 2434,
+      "sha256": "49697231222fb450a0561960f3e92abe2a609d38098a060d2d632c0831d89001"
+    },
+    {
+      "path": "my-part/reports/no-qlib-tests.xml",
+      "bytes": 27696,
+      "sha256": "51008b87b7c10db5b50f30c7591e2a45e123c4cdbcaaa7210d45a03ed2b48f13"
+    },
+    {
+      "path": "my-part/reports/synthetic-validation.json",
+      "bytes": 743,
+      "sha256": "3321d7ed185394b1efbd6f12ce38379681ced8d67234647f5bd1b9abcdb9ecee"
+    },
+    {
+      "path": "my-part/reports/test-results.xml",
+      "bytes": 19238,
+      "sha256": "5af5068e97b9e553a0ffaf030123de5fff986003c864b0ef5264a7ecd30b88a0"
+    },
+    {
+      "path": "my-part/src/ptop/__init__.py",
+      "bytes": 114,
+      "sha256": "c22c3c260b690b817f5669838eb440d61d03009f2fcaedac6a8e383371b314d5"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/__init__.py",
+      "bytes": 90,
+      "sha256": "6af41dff401d5e18e09bfd08d8c91458031d79a3242370f0f2c5fad15d8862ab"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/LICENSE",
+      "bytes": 1073,
+      "sha256": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/models.py",
+      "bytes": 4338,
+      "sha256": "a86635912fcb0ea3f275da355a8ddb9cd7431d63f20ef74034809929fcc6fd3e"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/processors.py",
+      "bytes": 2634,
+      "sha256": "308a88521609571934c73bccd7d38a36d775fd8a7dff8b56ef219ea5446f2e69"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/sampler.py",
+      "bytes": 6182,
+      "sha256": "358a8cbfaffa008c30f9b69372831dec3a9d8486e4ddeb95daa4c269d31afc9a"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/SOURCE.md",
+      "bytes": 2409,
+      "sha256": "b09d1d7ad0159f8587f620542be5f46202831656e3a8d2b461dced150cf94f61"
+    },
+    {
+      "path": "my-part/src/ptop/_vendor/qlib/utils.py",
+      "bytes": 2076,
+      "sha256": "32d74247fd0e336aafccd79c31404700f32a4f5c48f959c29fad811e78fe75a9"
+    },
+    {
+      "path": "my-part/src/ptop/bundle.py",
+      "bytes": 9768,
+      "sha256": "0ebad6d903dac6b16a252a92c49e10d5e26f4410f305a7731a41682101b62243"
+    },
+    {
+      "path": "my-part/src/ptop/data.py",
+      "bytes": 11781,
+      "sha256": "ff76c6b5fa239b913583f9ba82d1fa2753258205bf821e134aef5c5981d11599"
+    },
+    {
+      "path": "my-part/src/ptop/encoders.py",
+      "bytes": 10860,
+      "sha256": "e5b4261172fe2d5d78d67206548b38bbf2e905a7e86334c27ff70b6310a5da21"
+    },
+    {
+      "path": "my-part/src/ptop/local_archive.py",
+      "bytes": 23731,
+      "sha256": "1224197b0b3b4e675971d00c475aebdac7c5361d011235dff2378b5b54e46818"
+    },
+    {
+      "path": "my-part/src/ptop/local_preflight.py",
+      "bytes": 17479,
+      "sha256": "12108b28a81339a4e265863f13c8c98cb58bd1494e9c7464575592142d24affa"
+    },
+    {
+      "path": "my-part/src/ptop/models.py",
+      "bytes": 6780,
+      "sha256": "3b33ebe88b76295c82be7ab8e5a47e287903f16fe20cca9f0bc8f5e4c31f2c30"
+    },
+    {
+      "path": "my-part/src/ptop/official.py",
+      "bytes": 9893,
+      "sha256": "5ab3eefbbe8611afa03f9074efca71a6efaac738bde5457e27539db07b83d077"
+    },
+    {
+      "path": "my-part/src/ptop/output.py",
+      "bytes": 2618,
+      "sha256": "fd8b6c53625706647357d46d81fdb92c89560aaa1cc70c47971e9658de8b0db2"
+    },
+    {
+      "path": "my-part/src/ptop/preprocessing.py",
+      "bytes": 20961,
+      "sha256": "5173214ca6672a60f12b82a2988d5a3889b089b40f9f4e6218f446a4855661a3"
+    },
+    {
+      "path": "my-part/src/ptop/preprocessing_audit.py",
+      "bytes": 16532,
+      "sha256": "2e0c946b320fa6c6084d9109d63b6bd01be7b5892d7216b317d0527763311462"
+    },
+    {
+      "path": "my-part/src/ptop/schema.py",
+      "bytes": 926,
+      "sha256": "c887b15777ccdd7b5498d1fc4bd933d7338a74cff1115f05f703f3a74742e0fb"
+    },
+    {
+      "path": "my-part/src/ptop/targets.py",
+      "bytes": 6277,
+      "sha256": "09dc020fe429bc295f79a2a62b298d4d816c55d16ffb50c79fec9f79135f26be"
+    },
+    {
+      "path": "my-part/src/ptop/windows.py",
+      "bytes": 16687,
+      "sha256": "803c070a41d690bc2904d4002debd781c999e708fb50bc5cf1bc0d39634a56cd"
+    },
+    {
+      "path": "my-part/tests/test_bundle.py",
+      "bytes": 3324,
+      "sha256": "a9e5124251c9e79a87414cb1b2fa60351388daaccea43e7c9e4c2391278541f9"
+    },
+    {
+      "path": "my-part/tests/test_cloud_bridge_handoff.py",
+      "bytes": 7231,
+      "sha256": "0f222d12a7a56b2315d41ba460d19382b4e600036b1bd9c6ed2f677908f55b0b"
+    },
+    {
+      "path": "my-part/tests/test_data.py",
+      "bytes": 4692,
+      "sha256": "bd7460555f80914cdfd2f283f62f2383577431d60c4fc4cf5c3ae82f3de06cc5"
+    },
+    {
+      "path": "my-part/tests/test_embedded_qlib.py",
+      "bytes": 4398,
+      "sha256": "d0f1420f5d4fc37171d1c14b222a179c0ddbdf422710089177054164f632b56a"
+    },
+    {
+      "path": "my-part/tests/test_encoders.py",
+      "bytes": 12502,
+      "sha256": "7b67610699a512fecc03d2c277a6456b30016a8b7eb65ac0cc4a33e720e572ad"
+    },
+    {
+      "path": "my-part/tests/test_integration.py",
+      "bytes": 915,
+      "sha256": "099d11c04f7eea7d7bacf913a86cc6b4b5eb1786f1095320267f4bdb1965e7b2"
+    },
+    {
+      "path": "my-part/tests/test_local_archive.py",
+      "bytes": 8514,
+      "sha256": "4afde3e44483496023a858bbaab1dadb27f088d322d82e7af7e8c17fb1a709d8"
+    },
+    {
+      "path": "my-part/tests/test_local_numeric.py",
+      "bytes": 5762,
+      "sha256": "f98a37647ac79d82defcfde87b1fa59683f49cda8e3697760c85710547a6c550"
+    },
+    {
+      "path": "my-part/tests/test_local_preflight.py",
+      "bytes": 2300,
+      "sha256": "cfc58abb10ed496d89691b956dc3e43c962005172bdb1d7d23358558b926307e"
+    },
+    {
+      "path": "my-part/tests/test_local_windows.py",
+      "bytes": 6663,
+      "sha256": "873790cfc46d6e8f7bb0cdd0b387da74122819950f1ca075ababbe77dd06e00d"
+    },
+    {
+      "path": "my-part/tests/test_models.py",
+      "bytes": 9208,
+      "sha256": "b2eb56ba525b4c196a1cf5ac678792294277d4a5f83f997305291c8b0f3f9c90"
+    },
+    {
+      "path": "my-part/tests/test_negative_context_extract.py",
+      "bytes": 2938,
+      "sha256": "30d7dd78775a5ea0a3a87d3d306f85c4c699dde82a7c3ccd99c8a773c101490f"
+    },
+    {
+      "path": "my-part/tests/test_negative_mechanism.py",
+      "bytes": 2547,
+      "sha256": "584e45259ec96b947f991354a261477fc62cade3bbf8325f84b6846aa67ff9cd"
+    },
+    {
+      "path": "my-part/tests/test_official.py",
+      "bytes": 8212,
+      "sha256": "e1bf0cdd5a29e912351be1dd8cebfbb36b0721c42809d082ec9750bc19015377"
+    },
+    {
+      "path": "my-part/tests/test_preprocessing.py",
+      "bytes": 10168,
+      "sha256": "28b12184ec7cdfb284ee2e61f0dfd14d10f2521b426f5cb8e9f2187ec1e1e6c5"
+    },
+    {
+      "path": "my-part/tests/test_preprocessing_audit.py",
+      "bytes": 8805,
+      "sha256": "c634ecd7177e4ee7f886fef56892c07d659e9ee3e68c5e6825909fae4e30eef0"
+    },
+    {
+      "path": "my-part/tests/test_targets_output.py",
+      "bytes": 3496,
+      "sha256": "115c7acc3c2e047bcb9be5ff74f22d3738460f428b3d139135dbc9a3ae9c4d4a"
+    },
+    {
+      "path": "my-part/tests/test_windows.py",
+      "bytes": 9339,
+      "sha256": "dfc28394c9ff521096222c67ccfa5cd08f22eb317f67b7453dac8968e3e0a019"
+    },
+    {
+      "path": "my-part/tools/analyze_negative_mechanism.py",
+      "bytes": 12610,
+      "sha256": "4eaddf492497ab57b5061b16bb166d86594d3f403600412a91b57e4c4dac435a"
+    },
+    {
+      "path": "my-part/tools/audit_local_archive.py",
+      "bytes": 2008,
+      "sha256": "f140d5d14de9bd936f3931f67dd780d90c65f7caf178a7fe6337150f80210992"
+    },
+    {
+      "path": "my-part/tools/build_bc_handoff.py",
+      "bytes": 8789,
+      "sha256": "5aed3d5bb0d543710a052679e439c274b466ae974202ff317ce1bb6b08790d2c"
+    },
+    {
+      "path": "my-part/tools/check_bc_handoff.py",
+      "bytes": 2545,
+      "sha256": "cef2fb87d99062719fdc351605b98f4b126a7e98aabcf5880ba7c6459dd930b6"
+    },
+    {
+      "path": "my-part/tools/compare_negative_frequencies.py",
+      "bytes": 4162,
+      "sha256": "2945e21d20b7466ff83a43a1e2e3035b524cfc4221998d8c4a4c98abc4e26968"
+    },
+    {
+      "path": "my-part/tools/extract_negative_context.py",
+      "bytes": 9103,
+      "sha256": "74ff4b573801bce4a9fa124a062a4357313b99208454458e81049b4dcd13ec28"
+    },
+    {
+      "path": "my-part/tools/handoff_import_probe.py",
+      "bytes": 1835,
+      "sha256": "cf7981cd21932a8c828388fe8e6473ecb1dfdb29b1f0b609f02f5d1c76d2f342"
+    },
+    {
+      "path": "my-part/tools/record_environment.py",
+      "bytes": 2090,
+      "sha256": "b76f3146910cb216df89f9c48339db2e3fb2463169426b94eba2333b3a384511"
+    },
+    {
+      "path": "my-part/tools/run_local_preflight.py",
+      "bytes": 828,
+      "sha256": "a88d3cf1d3872557f620074eee489bdf5eaba008f618820c339a87e59150c41d"
+    },
+    {
+      "path": "my-part/tools/setup.ps1",
+      "bytes": 645,
+      "sha256": "68f3cd96e19fc7e90f1927cf8608216d05a13d6324679af3b642f6b897391815"
+    },
+    {
+      "path": "my-part/tools/smoke.py",
+      "bytes": 6257,
+      "sha256": "390c1b8516d1393ec9a4c60a71be740547e2040d4ab73405db04e6e9569d804a"
+    },
+    {
+      "path": "my-part/tools/summarize_local_audit.py",
+      "bytes": 5217,
+      "sha256": "83f77788dffbe3ffaad4ffca780adaca719f81bf6933386b12cf66ffdf6e0f53"
+    },
+    {
+      "path": "my-part/tools/summarize_negative_cause.py",
+      "bytes": 3652,
+      "sha256": "0770ff09a71ae5002cbb829f8331df85dca6f6baf645c66fc102eaed133528f3"
+    },
+    {
+      "path": "my-part/tools/verify_local_windows.py",
+      "bytes": 662,
+      "sha256": "2d4afa6b6431dbd461751db697849353c7aa7f282b50f31a981b19dccbffe500"
+    },
+    {
+      "path": "my-part/tools/verify_reload.py",
+      "bytes": 1411,
+      "sha256": "9b88d862c1f0d5d9b6ba895540f5e6e08371e859310d60c6e6bbdbb5b0da329f"
+    },
+    {
+      "path": "my-part/Transformer_modelsave_predict.py",
+      "bytes": 5868,
+      "sha256": "8b529bd8b817070a65ea28b3d1dc6b7a37f65039103a8db97ddd5b98576b3843"
+    },
+    {
+      "path": "my-part/Transformer_modelsave_train.py",
+      "bytes": 12324,
+      "sha256": "a53681c263ddc24f1a014f92ec0d7f0589cfa2a9f5fb968e5f06df6e14d0621a"
+    },
+    {
+      "path": "my-part/uv.lock",
+      "bytes": 42065,
+      "sha256": "94fe50de7b9e879f39d1870451ae7e9dc456e93b2a254a932878eb1e05dc5f76"
+    },
+    {
+      "path": "my-part/validation/test_qlib_equivalence.py",
+      "bytes": 10882,
+      "sha256": "7c29c7330f2a405871942324718d21b8cf4103536e734ecabc3cfe57e91bb650"
+    },
+    {
+      "path": "my-part/vendor/licenses/gcc-libs/COPYING.LIB",
+      "bytes": 26527,
+      "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861"
+    },
+    {
+      "path": "my-part/vendor/licenses/gcc-libs/COPYING.RUNTIME",
+      "bytes": 3324,
+      "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74"
+    },
+    {
+      "path": "my-part/vendor/licenses/gcc-libs/COPYING3",
+      "bytes": 35147,
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903"
+    },
+    {
+      "path": "my-part/vendor/licenses/gcc-libs/README",
+      "bytes": 236,
+      "sha256": "33400d067fa3e2bd670a0868dcdb60c9486e8f559b675cf9ff1ff55d4e0d06ab"
+    },
+    {
+      "path": "my-part/vendor/licenses/libwinpthread/COPYING",
+      "bytes": 2883,
+      "sha256": "63263614cdd29f2f93cba85e992f041b31f9fc7b4033692f31269489a8a1b177"
+    },
+    {
+      "path": "my-part/vendor/licenses/QLIB-LICENSE",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "my-part/vendor/NOTICE.md",
+      "bytes": 1129,
+      "sha256": "5c87f30a1ed07cbfc92c8dc21be0561e47b8de9a0b93b831f0836c3aeba5bc04"
+    },
+    {
+      "path": "my-part/vendor/qlib-provenance.json",
+      "bytes": 1770,
+      "sha256": "040c6e8d41b8843aeb61324e1ba33cb4c98f9c954a92e385404c218c10b432e8"
+    },
+    {
+      "path": "my-part/vendor/wheels/pyqlib-0.0.0+git.54355232463878d2eebb91fe0ee5fa7fa1f5976c-cp312-cp312-win_amd64.whl",
+      "bytes": 1953432,
+      "sha256": "b5b9ee270cfd06ea8bd4d8088859eb0f668e2a078ad181deccaa94ed3292d593"
+    },
+    {
+      "path": "my-part/进益资本杯_端到端赛道说明.md",
+      "bytes": 31178,
+      "sha256": "fe87373a82ca4795384d34900f6ea4aeb5ded0205361712f1fffff34219a3e1c"
+    },
+    {
+      "path": "project/01_比赛规则与参赛流程.docx",
+      "bytes": 40209,
+      "sha256": "06370b39214d3826dc8a79b9e726459ceb5475fadd3c1746a27dedbf135d4107"
+    },
+    {
+      "path": "project/02_量化名词与指标解释.docx",
+      "bytes": 43674,
+      "sha256": "aed5f333e4af141a35e0c0f14947082ca97687f2d4c78c583afe8c74681a5ab2"
+    },
+    {
+      "path": "project/03_模型架构与训练方案.docx",
+      "bytes": 42566,
+      "sha256": "fdba4521e31a5995365067e3d9e6e496ce9640676abaa09cfd402eaeb1dc87a9"
+    },
+    {
+      "path": "project/04_团队分工与开发日程.docx",
+      "bytes": 39879,
+      "sha256": "96fcb2c6838fc9b53fb08079ba29147d7546d612b85122beb383d591d51d4d4e"
+    },
+    {
+      "path": "project/configs/b_diagnostic_cpu.json",
+      "bytes": 1857,
+      "sha256": "936dfd873e8ed16e05d4da6903ef3a44a664d0e93a309c96ebab2910a33c4a35"
+    },
+    {
+      "path": "project/configs/b_official_template.json",
+      "bytes": 1494,
+      "sha256": "8bf71d0e88243cf62a4e6e78dff77e983d420b27ad05207480f96f02b14301b7"
+    },
+    {
+      "path": "project/configs/b_train_cli_diagnostic.json",
+      "bytes": 1551,
+      "sha256": "143ad9db51f39cfa1c8384868df6a042dfdd155a285df22356fece55a5f60785"
+    },
+    {
+      "path": "project/docs/archive_status.md",
+      "bytes": 3011,
+      "sha256": "e41a0d05641b26cada7abe7a026c5a77d5380cb0edb90fc321652c381bf0acae"
+    },
+    {
+      "path": "project/docs/b_bundle_inference.md",
+      "bytes": 13013,
+      "sha256": "225b02fffb62796d067fab159a74cba5ebed962bb02d6e9c8a396f55f07775d0"
+    },
+    {
+      "path": "project/docs/b_data_reference.md",
+      "bytes": 951,
+      "sha256": "177790048625cb3bae355e4847264e151bf5b14d2bea13fcfe0e8d26bc8cd0dd"
+    },
+    {
+      "path": "project/docs/b_local_experiments.md",
+      "bytes": 1167,
+      "sha256": "083e1df3c04d8b5290ea559ba1f1d1f4a562def09f66a6082ae9c1751b4a1043"
+    },
+    {
+      "path": "project/docs/b_temporal_research.md",
+      "bytes": 18663,
+      "sha256": "e5b6e925e90fa932215592646c16ba5a033b1f7789f3cbcb7c63ffe7bf9dfb14"
+    },
+    {
+      "path": "project/docs/b_training_handoff.md",
+      "bytes": 11435,
+      "sha256": "9068c0334b9dcea856c0d3b8c7bf0673bc7c8453f768815295a29b05e8398c66"
+    },
+    {
+      "path": "project/docs/b_verification.md",
+      "bytes": 1146,
+      "sha256": "e7b25ca5cbbadac5158b88d4d767c94ab4a8fb66a034fb59ae0649704b74bc4f"
+    },
+    {
+      "path": "project/docs/objective_training_plan.md",
+      "bytes": 18188,
+      "sha256": "d8bd07542143712c673d0b4b8cc38433789a1ed484c71f58234572802be500bc"
+    },
+    {
+      "path": "project/docs/qlib-reference-tests.xml",
+      "bytes": 7021,
+      "sha256": "904840be73c02959d19c2501cdc0be78dd74f31312720b20f417058bda06c5ab"
+    },
+    {
+      "path": "project/docs/stage_one_losses.md",
+      "bytes": 5123,
+      "sha256": "4366c9c6d9cee984f70a79056387b05be050ea57f238aee1828dc44f5e8d8650"
+    },
+    {
+      "path": "project/docs/team_plan.md",
+      "bytes": 16079,
+      "sha256": "45da19a870fe1964e11b3c633ba4fc8e961b06f85355abe4fab8c80f8efa44c2"
+    },
+    {
+      "path": "project/docs/team_report.md",
+      "bytes": 10019,
+      "sha256": "041d6e30839790849965bdbf7fa415b94390b18e8207ec6bda2c7fe7f5494382"
+    },
+    {
+      "path": "project/examples/__init__.py",
+      "bytes": 13,
+      "sha256": "75ad4f4c2943325f88064ad2beae890b59674be2bf0404b30afc5584dc4de4bb"
+    },
+    {
+      "path": "project/examples/b_gpu_benchmark.py",
+      "bytes": 4307,
+      "sha256": "f925697abdcc08a529b560e006a20fc8a661b107cf9d6e3f10d6c888ec322736"
+    },
+    {
+      "path": "project/examples/b_real_data_smoke.py",
+      "bytes": 8707,
+      "sha256": "380b7ed06f3312f65b508205c731decc1ce9ab4ad25be202674b49fc1aa5da46"
+    },
+    {
+      "path": "project/examples/cloud_bridge.py",
+      "bytes": 13071,
+      "sha256": "0b706b2412b83cf0f7d0cb4816c21f3793aac23e5cc56e775b012e349abddc7e"
+    },
+    {
+      "path": "project/examples/forward_demo.py",
+      "bytes": 1631,
+      "sha256": "f757331b8cd6b9819ebf1db245c127062f746078bcb6b24f6479895bc4960d11"
+    },
+    {
+      "path": "project/pyproject.toml",
+      "bytes": 850,
+      "sha256": "809b0aac0a22a3ce7058e85a1426cffc9b8b9b4102113638b576e6d0e361af6a"
+    },
+    {
+      "path": "project/README.md",
+      "bytes": 6199,
+      "sha256": "e583085f44a63a98b7ecc7d8606cc7b1d4e1e43fc9bcbce33439b3bb072924f5"
+    },
+    {
+      "path": "project/requirements-a.txt",
+      "bytes": 75,
+      "sha256": "e404caccf918f6c4bd9c8d950a2df893a91c9bda3258ecb14193397a94ba741c"
+    },
+    {
+      "path": "project/requirements-b.txt",
+      "bytes": 89,
+      "sha256": "18a46180d57d1cb0aa7ce81b7f87bec81392e5a8da44323086a2e58210ae2608"
+    },
+    {
+      "path": "project/src/jyc_e2e/__init__.py",
+      "bytes": 635,
+      "sha256": "fe1cd0ef40bd447eb962f459f6a14ca2b19b80c7ae5e632111dcc2d3817e5bf5"
+    },
+    {
+      "path": "project/src/jyc_e2e/contracts.py",
+      "bytes": 3163,
+      "sha256": "31d9515c6eb09e01a8c097c0448852859328514e7ccacb31298e12a7be0cee1c"
+    },
+    {
+      "path": "project/src/jyc_e2e/losses.py",
+      "bytes": 8773,
+      "sha256": "9198365aab658f7279679f52cabf75ee0ee976e3b0cbb50e5625697b24c1dda0"
+    },
+    {
+      "path": "project/src/jyc_e2e/model.py",
+      "bytes": 6074,
+      "sha256": "a30cba415f34b6ba634d3f6829fa7d67dba1c5ffa543fd33c3aa0181120f9b1d"
+    },
+    {
+      "path": "project/src/jyc_e2e/preprocessing.py",
+      "bytes": 2329,
+      "sha256": "c5b0975a4fa6884e9dd4b6a88a6da612b1db38a1bc9810d59455f4d04b5a3fde"
+    },
+    {
+      "path": "project/src/jyc_e2e/research_metrics.py",
+      "bytes": 3300,
+      "sha256": "9bd0ef5017e222895cd96f4eda80e8c3b57dc1bc96c0b1ba0fc43df8cace5618"
+    },
+    {
+      "path": "project/src/ptop/__init__.py",
+      "bytes": 113,
+      "sha256": "4484f38fd21ad94711356e323fbbcadd397021c36f05417f027ee7d78cb7eae2"
+    },
+    {
+      "path": "project/src/ptop/_vendor/__init__.py",
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/__init__.py",
+      "bytes": 90,
+      "sha256": "6af41dff401d5e18e09bfd08d8c91458031d79a3242370f0f2c5fad15d8862ab"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/LICENSE",
+      "bytes": 1073,
+      "sha256": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/models.py",
+      "bytes": 4338,
+      "sha256": "a86635912fcb0ea3f275da355a8ddb9cd7431d63f20ef74034809929fcc6fd3e"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/processors.py",
+      "bytes": 2634,
+      "sha256": "308a88521609571934c73bccd7d38a36d775fd8a7dff8b56ef219ea5446f2e69"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/sampler.py",
+      "bytes": 6182,
+      "sha256": "358a8cbfaffa008c30f9b69372831dec3a9d8486e4ddeb95daa4c269d31afc9a"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/SOURCE.md",
+      "bytes": 2451,
+      "sha256": "645b2e57130584c4c1ebbbea73e041866864b1a7c24d5262b2a065eeea9b209d"
+    },
+    {
+      "path": "project/src/ptop/_vendor/qlib/utils.py",
+      "bytes": 2076,
+      "sha256": "32d74247fd0e336aafccd79c31404700f32a4f5c48f959c29fad811e78fe75a9"
+    },
+    {
+      "path": "project/src/ptop/backbones.py",
+      "bytes": 11605,
+      "sha256": "90995526010f8a3c2e1d3bcb7d06bda70cc362447b5061dceb7de175dc0cf385"
+    },
+    {
+      "path": "project/src/ptop/bundle.py",
+      "bytes": 33579,
+      "sha256": "3d76730d92ee81d7c67b919f48b126266fc3eae322fc1f87dab7d6dc45221ed9"
+    },
+    {
+      "path": "project/src/ptop/checkpoint.py",
+      "bytes": 22571,
+      "sha256": "22cb9a480b23b06129a5bb396fbd0ed53587e9eedb5f4010e55d37e7966e8367"
+    },
+    {
+      "path": "project/src/ptop/data.py",
+      "bytes": 11781,
+      "sha256": "ff76c6b5fa239b913583f9ba82d1fa2753258205bf821e134aef5c5981d11599"
+    },
+    {
+      "path": "project/src/ptop/encoders.py",
+      "bytes": 10860,
+      "sha256": "e5b4261172fe2d5d78d67206548b38bbf2e905a7e86334c27ff70b6310a5da21"
+    },
+    {
+      "path": "project/src/ptop/experiments.py",
+      "bytes": 25271,
+      "sha256": "304c08f58b56624a106f60bc6294abdd86b19994c1224729670d621939c6a03b"
+    },
+    {
+      "path": "project/src/ptop/inference.py",
+      "bytes": 20725,
+      "sha256": "38d14f18c1680e1c1054b14827e211ca752d0eea5b83865105bbf1dca491288d"
+    },
+    {
+      "path": "project/src/ptop/licenses/QLIB-MIT.txt",
+      "bytes": 1141,
+      "sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383"
+    },
+    {
+      "path": "project/src/ptop/local_training.py",
+      "bytes": 51184,
+      "sha256": "3b514421e1b4cfba9340a319c2b3cef9ae32cdf5b3b45561571c166744279e8c"
+    },
+    {
+      "path": "project/src/ptop/models.py",
+      "bytes": 6780,
+      "sha256": "3b33ebe88b76295c82be7ab8e5a47e287903f16fe20cca9f0bc8f5e4c31f2c30"
+    },
+    {
+      "path": "project/src/ptop/objectives.py",
+      "bytes": 2395,
+      "sha256": "1f668631bff36b974dfe32cac1d58f9f989c8955b23b3f83e2caa3035526addf"
+    },
+    {
+      "path": "project/src/ptop/official.py",
+      "bytes": 9893,
+      "sha256": "5ab3eefbbe8611afa03f9074efca71a6efaac738bde5457e27539db07b83d077"
+    },
+    {
+      "path": "project/src/ptop/output.py",
+      "bytes": 2618,
+      "sha256": "fd8b6c53625706647357d46d81fdb92c89560aaa1cc70c47971e9658de8b0db2"
+    },
+    {
+      "path": "project/src/ptop/preprocessing.py",
+      "bytes": 20961,
+      "sha256": "5173214ca6672a60f12b82a2988d5a3889b089b40f9f4e6218f446a4855661a3"
+    },
+    {
+      "path": "project/src/ptop/schema.py",
+      "bytes": 926,
+      "sha256": "c887b15777ccdd7b5498d1fc4bd933d7338a74cff1115f05f703f3a74742e0fb"
+    },
+    {
+      "path": "project/src/ptop/targets.py",
+      "bytes": 6277,
+      "sha256": "09dc020fe429bc295f79a2a62b298d4d816c55d16ffb50c79fec9f79135f26be"
+    },
+    {
+      "path": "project/src/ptop/temporal.py",
+      "bytes": 7750,
+      "sha256": "b206a31df8b687138eaf8bf1dfc5e0d98aa94789069b322f4b87f02fe917749a"
+    },
+    {
+      "path": "project/src/ptop/train.py",
+      "bytes": 4292,
+      "sha256": "5295a2654855faa47888e9f26dab4d2dcf5eb19d2e5d198461e94945a2537354"
+    },
+    {
+      "path": "project/src/ptop/training.py",
+      "bytes": 44294,
+      "sha256": "61845a26bb117fbd46d36777f239c042619437de96eeab7a0eaa875022c4ff9e"
+    },
+    {
+      "path": "project/src/ptop/training_config.py",
+      "bytes": 3146,
+      "sha256": "aa5663b23065b874595298d7e3fa60d506ffab15989c1e1dddc27eaecfef2473"
+    },
+    {
+      "path": "project/src/ptop/windows.py",
+      "bytes": 16687,
+      "sha256": "803c070a41d690bc2904d4002debd781c999e708fb50bc5cf1bc0d39634a56cd"
+    },
+    {
+      "path": "project/tests/conftest.py",
+      "bytes": 82,
+      "sha256": "f9fd117e97b80fad7cf348d7387071b0c64bfdeb753a31781bdfd3382725ca5b"
+    },
+    {
+      "path": "project/tests/test_checkpoint_inference.py",
+      "bytes": 33739,
+      "sha256": "b8a1fd98e8794a9b9f6b7b781d67ff5b0091109e574521ebdd4f420b016d9349"
+    },
+    {
+      "path": "project/tests/test_cloud_bridge.py",
+      "bytes": 8024,
+      "sha256": "0e2df24478d43d4988e2bc07ca970502a09c3f3d73b8b173f9a9981bff18244c"
+    },
+    {
+      "path": "project/tests/test_cuda_training.py",
+      "bytes": 4365,
+      "sha256": "bcd1f5085e8f91e5226d36ce507fb26eef63675c0f053d174eece0ea9ff0b022"
+    },
+    {
+      "path": "project/tests/test_embedded_qlib.py",
+      "bytes": 4398,
+      "sha256": "14b86e8239c14d788f7d58cf1dc79d695a19e60e12d443fe54bd727c2170f8ed"
+    },
+    {
+      "path": "project/tests/test_local_training.py",
+      "bytes": 28470,
+      "sha256": "a9e1629be565d92847dba32cf384f3972c8f1cd0c67a931bd7f1831522c5152a"
+    },
+    {
+      "path": "project/tests/test_temporal.py",
+      "bytes": 19309,
+      "sha256": "e14bb1b3e0220262051c3b0ab975f159217c0b94bbf4e6d63cf6dc720cce355e"
+    },
+    {
+      "path": "project/tests/test_training.py",
+      "bytes": 15189,
+      "sha256": "72fad2cf1d97360ed3ebf5da286c32e03befc9b76e5850633af4cb839ed3e5cf"
+    },
+    {
+      "path": "project/THIRD_PARTY.md",
+      "bytes": 1670,
+      "sha256": "346f5366fb52ae32bd4fc336971a37eaa65a1a2bce83c160288995ba6521cfa9"
+    },
+    {
+      "path": "project/validation/test_qlib_equivalence.py",
+      "bytes": 12221,
+      "sha256": "cf152fabdce3f4fe242f5b62ecf5c1a8e3349a9e71df9e55403132d607cd65c4"
+    },
+    {
+      "path": "project/端到端量化比赛入门与实施指南.docx",
+      "bytes": 43141,
+      "sha256": "9e2dec73bebd70b2838644365c61ecfa92f833741e879a83b0adbebd3270c791"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1113,
+      "sha256": "628b7480504c978ba9abb843bc8d100b9d8e2da69334099bb23ded7414d07ea8"
+    },
+    {
+      "path": "UPLOAD_VERIFICATION.json",
+      "bytes": 3517,
+      "sha256": "caa635c78576e9324de776b1619190dec83d823b556c74f838b6f76cfd245298"
+    }
+  ]
+}
