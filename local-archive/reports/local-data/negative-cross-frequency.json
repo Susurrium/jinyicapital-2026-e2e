@@ -1,0 +1,254 @@
+{
+  "scope": "local exported data only; not cloud int32 ground truth",
+  "frequencies": {
+    "30m": {
+      "source_path": "E:\\PtoP\\data\\cpt_jyc_2026_e2e_bar30m.tar.gz",
+      "sha256": "778662b2e40ddabfdddeb1abf2cdc52b72831cd2b8cee60f2aab8fb76a892cfb",
+      "source_members": [
+        "cpt_jyc_2026_e2e_bar30m/202408.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202405.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202410.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202103.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202412.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202204.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202002.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202407.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202409.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202411.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202201.0.feather",
+        "cpt_jyc_2026_e2e_bar30m/202406.0.feather"
+      ],
+      "source_types": {
+        "cpt_jyc_2026_e2e_bar30m/202408.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202405.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202410.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202103.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202412.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202204.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202002.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202407.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202409.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202411.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202201.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar30m/202406.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        }
+      },
+      "matched_anomaly_keys": 296,
+      "same_raw_value": 296,
+      "different_raw_value": 0,
+      "by_field": {
+        "ask_num_orders1": {
+          "matched": 176,
+          "same": 176
+        },
+        "bid_num_orders1": {
+          "matched": 120,
+          "same": 120
+        }
+      },
+      "elapsed_seconds": 4.42771939999875,
+      "scope": "only identical date/instrument keys among previously identified 1m negative cells"
+    },
+    "15m": {
+      "source_path": "E:\\PtoP\\data\\cpt_jyc_2026_e2e_bar15m.tar.gz",
+      "sha256": "bee0df5b33cdd2001c082dea7b18e9191cbfd1dc1637d1beabdf3d3e6f513253",
+      "source_members": [
+        "cpt_jyc_2026_e2e_bar15m/202408.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202405.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202410.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202103.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202412.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202204.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202002.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202407.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202409.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202411.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202201.0.feather",
+        "cpt_jyc_2026_e2e_bar15m/202406.0.feather"
+      ],
+      "source_types": {
+        "cpt_jyc_2026_e2e_bar15m/202408.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202405.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202410.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202103.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202412.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202204.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202002.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202407.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202409.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202411.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202201.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar15m/202406.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        }
+      },
+      "matched_anomaly_keys": 567,
+      "same_raw_value": 567,
+      "different_raw_value": 0,
+      "by_field": {
+        "ask_num_orders1": {
+          "matched": 344,
+          "same": 344
+        },
+        "bid_num_orders1": {
+          "matched": 223,
+          "same": 223
+        }
+      },
+      "elapsed_seconds": 7.658326599997963,
+      "scope": "only identical date/instrument keys among previously identified 1m negative cells"
+    },
+    "5m": {
+      "source_path": "E:\\PtoP\\data\\cpt_jyc_2026_e2e_bar5m.tar.gz",
+      "sha256": "e96094784251e72b0b4c2dc509e2d43a2fcd42f4ccfad63928977f78d03bddbf",
+      "source_members": [
+        "cpt_jyc_2026_e2e_bar5m/202408.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202405.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202410.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202103.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202412.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202204.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202002.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202407.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202409.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202411.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202201.0.feather",
+        "cpt_jyc_2026_e2e_bar5m/202406.0.feather"
+      ],
+      "source_types": {
+        "cpt_jyc_2026_e2e_bar5m/202408.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202405.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202410.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202103.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202412.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202204.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202002.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202407.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202409.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202411.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202201.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        },
+        "cpt_jyc_2026_e2e_bar5m/202406.0.feather": {
+          "bid_num_orders1": "int16",
+          "ask_num_orders1": "int16"
+        }
+      },
+      "matched_anomaly_keys": 1649,
+      "same_raw_value": 1649,
+      "different_raw_value": 0,
+      "by_field": {
+        "ask_num_orders1": {
+          "matched": 1007,
+          "same": 1007
+        },
+        "bid_num_orders1": {
+          "matched": 642,
+          "same": 642
+        }
+      },
+      "elapsed_seconds": 19.557043200002227,
+      "scope": "only identical date/instrument keys among previously identified 1m negative cells"
+    }
+  }
+}

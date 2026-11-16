@@ -1,0 +1,1441 @@
+{
+  "status": "diagnostic_evidence_only",
+  "scope": "全部已定位负值及全部受影响 instrument-month 的同日连续一分钟变化；保留原始值",
+  "input_files": {
+    "negative": {
+      "path": "work\\local_archive\\unknown-negative-records.parquet",
+      "sha256": "703fdc341c6eefa4891f1f6005256cc3f32003840fec3523a55e40ad83b3caf9"
+    },
+    "context": {
+      "path": "work\\negative-cause\\context-1m.parquet",
+      "sha256": "965b21d6581973e2bf76d705be4e762f5c726926dc315c808719d2fd52fb331c"
+    }
+  },
+  "hypothesis": {
+    "unsigned_candidate": "仅对负值计算 raw + 65536，用于检验 int16 表示假设",
+    "minimum_modular_delta": "((current - previous + 32768) % 65536) - 32768",
+    "boundary_distance": 4096,
+    "minimum_modular_delta_assumption": "真实每分钟净变化绝对值小于 32768 时，最小模差才等于真实变化；当前缺少该保证",
+    "ambiguity": "多个非负整数可映射到同一 int16 值；该诊断不能确认转换发生位置或保证 raw + 65536 可还原真实笔数"
+  },
+  "negative_profile": {
+    "cells": 8084,
+    "instruments": 22,
+    "dates": 39,
+    "months": {
+      "2020-02": 222,
+      "2021-03": 187,
+      "2022-01": 313,
+      "2022-04": 288,
+      "2024-05": 594,
+      "2024-06": 281,
+      "2024-07": 239,
+      "2024-08": 323,
+      "2024-09": 202,
+      "2024-10": 1830,
+      "2024-11": 3595,
+      "2024-12": 10
+    },
+    "fields": {
+      "ask_num_orders1": {
+        "cells": 4950,
+        "unique_values": 4265,
+        "minimum": -32768,
+        "maximum": -33,
+        "raw_quantiles": {
+          "0": -32768.0,
+          "0.25": -30214.5,
+          "0.5": -26635.0,
+          "0.75": -20658.25,
+          "0.95": -7170.849999999994,
+          "1": -33.0
+        },
+        "unsigned_candidate_quantiles": {
+          "0": 32768.0,
+          "0.25": 35321.5,
+          "0.5": 38901.0,
+          "0.75": 44877.75,
+          "0.95": 58365.15000000001,
+          "1": 65503.0
+        },
+        "all_fit_signed_int16_range": true,
+        "most_frequent_values": [
+          {
+            "value": -31240,
+            "count": 5
+          },
+          {
+            "value": -28152,
+            "count": 4
+          },
+          {
+            "value": -32271,
+            "count": 4
+          },
+          {
+            "value": -32156,
+            "count": 4
+          },
+          {
+            "value": -26486,
+            "count": 4
+          },
+          {
+            "value": -32022,
+            "count": 4
+          },
+          {
+            "value": -24446,
+            "count": 4
+          },
+          {
+            "value": -30944,
+            "count": 4
+          },
+          {
+            "value": -16406,
+            "count": 4
+          },
+          {
+            "value": -26799,
+            "count": 4
+          }
+        ],
+        "histogram": [
+          {
+            "lower_inclusive": -32768,
+            "upper_exclusive": -30720,
+            "cells": 1015
+          },
+          {
+            "lower_inclusive": -30720,
+            "upper_exclusive": -28672,
+            "cells": 734
+          },
+          {
+            "lower_inclusive": -28672,
+            "upper_exclusive": -26624,
+            "cells": 729
+          },
+          {
+            "lower_inclusive": -26624,
+            "upper_exclusive": -24576,
+            "cells": 562
+          },
+          {
+            "lower_inclusive": -24576,
+            "upper_exclusive": -22528,
+            "cells": 346
+          },
+          {
+            "lower_inclusive": -22528,
+            "upper_exclusive": -20480,
+            "cells": 360
+          },
+          {
+            "lower_inclusive": -20480,
+            "upper_exclusive": -18432,
+            "cells": 238
+          },
+          {
+            "lower_inclusive": -18432,
+            "upper_exclusive": -16384,
+            "cells": 235
+          },
+          {
+            "lower_inclusive": -16384,
+            "upper_exclusive": -14336,
+            "cells": 129
+          },
+          {
+            "lower_inclusive": -14336,
+            "upper_exclusive": -12288,
+            "cells": 162
+          },
+          {
+            "lower_inclusive": -12288,
+            "upper_exclusive": -10240,
+            "cells": 77
+          },
+          {
+            "lower_inclusive": -10240,
+            "upper_exclusive": -8192,
+            "cells": 51
+          },
+          {
+            "lower_inclusive": -8192,
+            "upper_exclusive": -6144,
+            "cells": 98
+          },
+          {
+            "lower_inclusive": -6144,
+            "upper_exclusive": -4096,
+            "cells": 17
+          },
+          {
+            "lower_inclusive": -4096,
+            "upper_exclusive": -2048,
+            "cells": 31
+          },
+          {
+            "lower_inclusive": -2048,
+            "upper_exclusive": 0,
+            "cells": 166
+          }
+        ],
+        "by_instrument": {
+          "55": 202,
+          "125": 313,
+          "429": 323,
+          "613": 170,
+          "869": 288,
+          "929": 46,
+          "1199": 59,
+          "1226": 875,
+          "1263": 187,
+          "3246": 121,
+          "3263": 1483,
+          "3329": 239,
+          "3368": 426,
+          "3765": 218
+        }
+      },
+      "bid_num_orders1": {
+        "cells": 3134,
+        "unique_values": 2874,
+        "minimum": -32766,
+        "maximum": -47,
+        "raw_quantiles": {
+          "0": -32766.0,
+          "0.25": -28187.25,
+          "0.5": -22933.5,
+          "0.75": -17338.5,
+          "0.95": -10541.550000000001,
+          "1": -47.0
+        },
+        "unsigned_candidate_quantiles": {
+          "0": 32770.0,
+          "0.25": 37348.75,
+          "0.5": 42602.5,
+          "0.75": 48197.5,
+          "0.95": 54994.45,
+          "1": 65489.0
+        },
+        "all_fit_signed_int16_range": true,
+        "most_frequent_values": [
+          {
+            "value": -20013,
+            "count": 4
+          },
+          {
+            "value": -20375,
+            "count": 4
+          },
+          {
+            "value": -29734,
+            "count": 4
+          },
+          {
+            "value": -29811,
+            "count": 4
+          },
+          {
+            "value": -20311,
+            "count": 3
+          },
+          {
+            "value": -28232,
+            "count": 3
+          },
+          {
+            "value": -24604,
+            "count": 3
+          },
+          {
+            "value": -19092,
+            "count": 3
+          },
+          {
+            "value": -16488,
+            "count": 3
+          },
+          {
+            "value": -20029,
+            "count": 3
+          }
+        ],
+        "histogram": [
+          {
+            "lower_inclusive": -32768,
+            "upper_exclusive": -30720,
+            "cells": 277
+          },
+          {
+            "lower_inclusive": -30720,
+            "upper_exclusive": -28672,
+            "cells": 419
+          },
+          {
+            "lower_inclusive": -28672,
+            "upper_exclusive": -26624,
+            "cells": 284
+          },
+          {
+            "lower_inclusive": -26624,
+            "upper_exclusive": -24576,
+            "cells": 254
+          },
+          {
+            "lower_inclusive": -24576,
+            "upper_exclusive": -22528,
+            "cells": 398
+          },
+          {
+            "lower_inclusive": -22528,
+            "upper_exclusive": -20480,
+            "cells": 219
+          },
+          {
+            "lower_inclusive": -20480,
+            "upper_exclusive": -18432,
+            "cells": 400
+          },
+          {
+            "lower_inclusive": -18432,
+            "upper_exclusive": -16384,
+            "cells": 236
+          },
+          {
+            "lower_inclusive": -16384,
+            "upper_exclusive": -14336,
+            "cells": 223
+          },
+          {
+            "lower_inclusive": -14336,
+            "upper_exclusive": -12288,
+            "cells": 175
+          },
+          {
+            "lower_inclusive": -12288,
+            "upper_exclusive": -10240,
+            "cells": 101
+          },
+          {
+            "lower_inclusive": -10240,
+            "upper_exclusive": -8192,
+            "cells": 44
+          },
+          {
+            "lower_inclusive": -8192,
+            "upper_exclusive": -6144,
+            "cells": 29
+          },
+          {
+            "lower_inclusive": -6144,
+            "upper_exclusive": -4096,
+            "cells": 8
+          },
+          {
+            "lower_inclusive": -4096,
+            "upper_exclusive": -2048,
+            "cells": 28
+          },
+          {
+            "lower_inclusive": -2048,
+            "upper_exclusive": 0,
+            "cells": 39
+          }
+        ],
+        "by_instrument": {
+          "16": 975,
+          "354": 93,
+          "971": 10,
+          "1019": 478,
+          "1073": 210,
+          "1084": 372,
+          "1199": 433,
+          "1970": 231,
+          "3241": 4,
+          "3368": 328
+        }
+      }
+    }
+  },
+  "context_profile": {
+    "rows": 124500,
+    "instruments": 22,
+    "dates": 235,
+    "negative_locator_matches_context_exactly": true,
+    "fields": {
+      "ask_num_orders1": {
+        "context_minimum": -32768,
+        "context_maximum": 32765,
+        "all_values_within_signed_int16_range": true,
+        "all_adjacent_one_minute_pairs": 123006,
+        "pairs_touching_negative": {
+          "pairs": 4963,
+          "raw_absolute_delta": {
+            "0": 0.0,
+            "0.25": 17.0,
+            "0.5": 35.0,
+            "0.75": 77.0,
+            "0.95": 329.89999999999964,
+            "1": 65518.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 0.0,
+            "0.25": 17.0,
+            "0.5": 35.0,
+            "0.75": 76.0,
+            "0.95": 306.89999999999964,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 0.0,
+            "0.25": 17.0,
+            "0.5": 35.0,
+            "0.75": 76.0,
+            "0.95": 303.0,
+            "1": 32568.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 35,
+          "unsigned_candidate_larger_step_pairs": 65,
+          "unsigned_candidate_step_over_32768_pairs": 65,
+          "minimum_modular_step_at_most_4096_pairs": 4899,
+          "same_quote_price_pairs": 4951,
+          "both_queue_volumes_positive_pairs": 4955,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 2.2352158548509835e-07,
+            "0.25": 0.00021862908200146388,
+            "0.5": 0.0006023681778569538,
+            "0.75": 0.00157798740858715,
+            "0.95": 0.006661671165640679,
+            "1": 3435527.56
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 4889
+        },
+        "all_sign_changes": {
+          "pairs": 100,
+          "raw_absolute_delta": {
+            "0": 44.0,
+            "0.25": 20944.0,
+            "0.5": 30817.5,
+            "0.75": 64985.25,
+            "0.95": 65499.35,
+            "1": 65518.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 18.0,
+            "0.25": 550.75,
+            "0.5": 34718.5,
+            "0.75": 44592.0,
+            "0.95": 64921.3,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 18.0,
+            "0.25": 333.25,
+            "0.5": 15736.5,
+            "0.75": 28501.75,
+            "0.95": 31751.2,
+            "1": 32568.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 35,
+          "unsigned_candidate_larger_step_pairs": 65,
+          "unsigned_candidate_step_over_32768_pairs": 65,
+          "minimum_modular_step_at_most_4096_pairs": 41,
+          "same_quote_price_pairs": 88,
+          "both_queue_volumes_positive_pairs": 92,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.0002412859423781339,
+            "0.25": 0.005542196726344793,
+            "0.5": 0.9994368446051349,
+            "0.75": 240.7557490049747,
+            "0.95": 196045.6003037635,
+            "1": 3435527.56
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 38
+        },
+        "sign_changes_at_same_quote_price": {
+          "pairs": 88,
+          "raw_absolute_delta": {
+            "0": 44.0,
+            "0.25": 23212.0,
+            "0.5": 31010.5,
+            "0.75": 65211.25,
+            "0.95": 65503.55,
+            "1": 65518.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 18.0,
+            "0.25": 324.75,
+            "0.5": 34525.5,
+            "0.75": 42324.0,
+            "0.95": 65020.9,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 18.0,
+            "0.25": 227.5,
+            "0.5": 8669.5,
+            "0.75": 28234.0,
+            "0.95": 31648.3,
+            "1": 32568.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 35,
+          "unsigned_candidate_larger_step_pairs": 53,
+          "unsigned_candidate_step_over_32768_pairs": 53,
+          "minimum_modular_step_at_most_4096_pairs": 41,
+          "same_quote_price_pairs": 88,
+          "both_queue_volumes_positive_pairs": 88,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.0002412859423781339,
+            "0.25": 0.004478252338499303,
+            "0.5": 0.9984539275644555,
+            "0.75": 369.7203827222027,
+            "0.95": 198456.67080913967,
+            "1": 3435527.56
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 38
+        },
+        "signed_boundary_sign_changes": {
+          "pairs": 32,
+          "raw_absolute_delta": {
+            "0": 62946.0,
+            "0.25": 65147.25,
+            "0.5": 65382.5,
+            "0.75": 65456.5,
+            "0.95": 65512.9,
+            "1": 65518.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 18.0,
+            "0.25": 79.5,
+            "0.5": 153.5,
+            "0.75": 388.75,
+            "0.95": 1418.6499999999999,
+            "1": 2590.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 18.0,
+            "0.25": 79.5,
+            "0.5": 153.5,
+            "0.75": 388.75,
+            "0.95": 1418.6499999999999,
+            "1": 2590.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 32,
+          "unsigned_candidate_larger_step_pairs": 0,
+          "unsigned_candidate_step_over_32768_pairs": 0,
+          "minimum_modular_step_at_most_4096_pairs": 32,
+          "same_quote_price_pairs": 32,
+          "both_queue_volumes_positive_pairs": 32,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.0002412859423781339,
+            "0.25": 0.0009133599573025487,
+            "0.5": 0.0021732039324637697,
+            "0.75": 0.007989451056199717,
+            "0.95": 0.019272832478841376,
+            "1": 0.04189375972193724
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 32
+        },
+        "signed_boundary_sign_changes_at_same_quote_price": {
+          "pairs": 32,
+          "raw_absolute_delta": {
+            "0": 62946.0,
+            "0.25": 65147.25,
+            "0.5": 65382.5,
+            "0.75": 65456.5,
+            "0.95": 65512.9,
+            "1": 65518.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 18.0,
+            "0.25": 79.5,
+            "0.5": 153.5,
+            "0.75": 388.75,
+            "0.95": 1418.6499999999999,
+            "1": 2590.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 18.0,
+            "0.25": 79.5,
+            "0.5": 153.5,
+            "0.75": 388.75,
+            "0.95": 1418.6499999999999,
+            "1": 2590.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 32,
+          "unsigned_candidate_larger_step_pairs": 0,
+          "unsigned_candidate_step_over_32768_pairs": 0,
+          "minimum_modular_step_at_most_4096_pairs": 32,
+          "same_quote_price_pairs": 32,
+          "both_queue_volumes_positive_pairs": 32,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.0002412859423781339,
+            "0.25": 0.0009133599573025487,
+            "0.5": 0.0021732039324637697,
+            "0.75": 0.007989451056199717,
+            "0.95": 0.019272832478841376,
+            "1": 0.04189375972193724
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 32
+        },
+        "zero_boundary_sign_changes": {
+          "pairs": 9,
+          "raw_absolute_delta": {
+            "0": 44.0,
+            "0.25": 328.0,
+            "0.5": 457.0,
+            "0.75": 698.0,
+            "0.95": 2461.599999999999,
+            "1": 3610.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 61926.0,
+            "0.25": 64838.0,
+            "0.5": 65079.0,
+            "0.75": 65208.0,
+            "0.95": 65482.8,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 44.0,
+            "0.25": 328.0,
+            "0.5": 457.0,
+            "0.75": 698.0,
+            "0.95": 2461.599999999999,
+            "1": 3610.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 9,
+          "unsigned_candidate_step_over_32768_pairs": 9,
+          "minimum_modular_step_at_most_4096_pairs": 9,
+          "same_quote_price_pairs": 9,
+          "both_queue_volumes_positive_pairs": 9,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00046353949489003987,
+            "0.25": 0.0038517151376244283,
+            "0.5": 0.011655861364258467,
+            "0.75": 0.055699625227433554,
+            "0.95": 817.3109101829783,
+            "1": 1361.5184789529537
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 6
+        },
+        "zero_boundary_sign_changes_at_same_quote_price": {
+          "pairs": 9,
+          "raw_absolute_delta": {
+            "0": 44.0,
+            "0.25": 328.0,
+            "0.5": 457.0,
+            "0.75": 698.0,
+            "0.95": 2461.599999999999,
+            "1": 3610.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 61926.0,
+            "0.25": 64838.0,
+            "0.5": 65079.0,
+            "0.75": 65208.0,
+            "0.95": 65482.8,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 44.0,
+            "0.25": 328.0,
+            "0.5": 457.0,
+            "0.75": 698.0,
+            "0.95": 2461.599999999999,
+            "1": 3610.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 9,
+          "unsigned_candidate_step_over_32768_pairs": 9,
+          "minimum_modular_step_at_most_4096_pairs": 9,
+          "same_quote_price_pairs": 9,
+          "both_queue_volumes_positive_pairs": 9,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00046353949489003987,
+            "0.25": 0.0038517151376244283,
+            "0.5": 0.011655861364258467,
+            "0.75": 0.055699625227433554,
+            "0.95": 817.3109101829783,
+            "1": 1361.5184789529537
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 6
+        },
+        "zero_boundary_sign_changes_at_same_quote_price_and_at_most_five_percent_volume_change": {
+          "pairs": 6,
+          "raw_absolute_delta": {
+            "0": 44.0,
+            "0.25": 329.75,
+            "0.5": 396.0,
+            "0.75": 581.5,
+            "0.95": 679.25,
+            "1": 698.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 64838.0,
+            "0.25": 64954.5,
+            "0.5": 65140.0,
+            "0.75": 65206.25,
+            "0.95": 65421.0,
+            "1": 65492.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 44.0,
+            "0.25": 329.75,
+            "0.5": 396.0,
+            "0.75": 581.5,
+            "0.95": 679.25,
+            "1": 698.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 6,
+          "unsigned_candidate_step_over_32768_pairs": 6,
+          "minimum_modular_step_at_most_4096_pairs": 6,
+          "same_quote_price_pairs": 6,
+          "both_queue_volumes_positive_pairs": 6,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00046353949489003987,
+            "0.25": 0.00220212859683247,
+            "0.5": 0.007511071654734154,
+            "0.75": 0.011534503066154821,
+            "0.95": 0.016003064549089903,
+            "1": 0.017452132277367048
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 6
+        },
+        "witness_selection": "各类别按绝对最小模 65536 变化量、instrument_id、date 排序取前四条；类别统计包含全部相邻一分钟记录",
+        "signed_boundary_same_price_witnesses": [
+          {
+            "instrument_id": 1226,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-05-22T13:29:00.000",
+            "date": "2024-05-22T13:30:00.000",
+            "previous_value": -32758,
+            "value": 32760,
+            "raw_delta": 65518,
+            "previous_unsigned_candidate": 32778,
+            "unsigned_candidate": 32760,
+            "unsigned_candidate_delta": -18,
+            "minimum_modular_delta": -18,
+            "previous_price": 90.0,
+            "price": 90,
+            "previous_volume": 537666196.0,
+            "volume": 537169996,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 3263,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-11T11:26:00.000",
+            "date": "2024-11-11T11:27:00.000",
+            "previous_value": 32765,
+            "value": -32749,
+            "raw_delta": -65514,
+            "previous_unsigned_candidate": 32765,
+            "unsigned_candidate": 32787,
+            "unsigned_candidate_delta": 22,
+            "minimum_modular_delta": 22,
+            "previous_price": 221.0,
+            "price": 221,
+            "previous_volume": 333610197.0,
+            "volume": 333791697,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 1226,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-05-22T13:28:00.000",
+            "date": "2024-05-22T13:29:00.000",
+            "previous_value": 32754,
+            "value": -32758,
+            "raw_delta": -65512,
+            "previous_unsigned_candidate": 32754,
+            "unsigned_candidate": 32778,
+            "unsigned_candidate_delta": 24,
+            "minimum_modular_delta": 24,
+            "previous_price": 90.0,
+            "price": 90,
+            "previous_volume": 537536496.0,
+            "volume": 537666196,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 1226,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-06-04T14:13:00.000",
+            "date": "2024-06-04T14:14:00.000",
+            "previous_value": 32743,
+            "value": -32768,
+            "raw_delta": -65511,
+            "previous_unsigned_candidate": 32743,
+            "unsigned_candidate": 32768,
+            "unsigned_candidate_delta": 25,
+            "minimum_modular_delta": 25,
+            "previous_price": 58.0,
+            "price": 58,
+            "previous_volume": 648298237.0,
+            "volume": 648465737,
+            "same_quote_price": true
+          }
+        ],
+        "zero_boundary_same_price_witnesses": [
+          {
+            "instrument_id": 3368,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-12T14:32:00.000",
+            "date": "2024-11-12T14:33:00.000",
+            "previous_value": -33,
+            "value": 11,
+            "raw_delta": 44,
+            "previous_unsigned_candidate": 65503,
+            "unsigned_candidate": 11,
+            "unsigned_candidate_delta": -65492,
+            "minimum_modular_delta": 44,
+            "previous_price": 326.0,
+            "price": 326,
+            "previous_volume": 399651045.0,
+            "volume": 400311375,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 3368,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-12T14:59:00.000",
+            "date": "2024-11-12T15:00:00.000",
+            "previous_value": 0,
+            "value": -67,
+            "raw_delta": -67,
+            "previous_unsigned_candidate": 0,
+            "unsigned_candidate": 65469,
+            "unsigned_candidate_delta": 65469,
+            "minimum_modular_delta": -67,
+            "previous_price": 326.0,
+            "price": 326,
+            "previous_volume": 282700.0,
+            "volume": 385183974,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 3368,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-12T14:40:00.000",
+            "date": "2024-11-12T14:41:00.000",
+            "previous_value": 185,
+            "value": -143,
+            "raw_delta": -328,
+            "previous_unsigned_candidate": 185,
+            "unsigned_candidate": 65393,
+            "unsigned_candidate_delta": 65208,
+            "minimum_modular_delta": -328,
+            "previous_price": 326.0,
+            "price": 326,
+            "previous_volume": 401109295.0,
+            "volume": 400923365,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 613,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-04T10:05:00.000",
+            "date": "2024-11-04T10:06:00.000",
+            "previous_value": -48,
+            "value": 287,
+            "raw_delta": 335,
+            "previous_unsigned_candidate": 65488,
+            "unsigned_candidate": 287,
+            "unsigned_candidate_delta": -65201,
+            "minimum_modular_delta": 335,
+            "previous_price": 2727.0,
+            "price": 2727,
+            "previous_volume": 72928550.0,
+            "volume": 73209450,
+            "same_quote_price": true
+          }
+        ],
+        "zero_boundary_same_price_and_stable_volume_witnesses": [
+          {
+            "instrument_id": 3368,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-12T14:32:00.000",
+            "date": "2024-11-12T14:33:00.000",
+            "previous_value": -33,
+            "value": 11,
+            "raw_delta": 44,
+            "previous_unsigned_candidate": 65503,
+            "unsigned_candidate": 11,
+            "unsigned_candidate_delta": -65492,
+            "minimum_modular_delta": 44,
+            "previous_price": 326.0,
+            "price": 326,
+            "previous_volume": 399651045.0,
+            "volume": 400311375,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 3368,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-12T14:40:00.000",
+            "date": "2024-11-12T14:41:00.000",
+            "previous_value": 185,
+            "value": -143,
+            "raw_delta": -328,
+            "previous_unsigned_candidate": 185,
+            "unsigned_candidate": 65393,
+            "unsigned_candidate_delta": 65208,
+            "minimum_modular_delta": -328,
+            "previous_price": 326.0,
+            "price": 326,
+            "previous_volume": 401109295.0,
+            "volume": 400923365,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 613,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-04T10:05:00.000",
+            "date": "2024-11-04T10:06:00.000",
+            "previous_value": -48,
+            "value": 287,
+            "raw_delta": 335,
+            "previous_unsigned_candidate": 65488,
+            "unsigned_candidate": 287,
+            "unsigned_candidate_delta": -65201,
+            "minimum_modular_delta": 335,
+            "previous_price": 2727.0,
+            "price": 2727,
+            "previous_volume": 72928550.0,
+            "volume": 73209450,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 613,
+            "field": "ask_num_orders1",
+            "previous_date": "2024-11-04T11:15:00.000",
+            "date": "2024-11-04T11:16:00.000",
+            "previous_value": 48,
+            "value": -409,
+            "raw_delta": -457,
+            "previous_unsigned_candidate": 48,
+            "unsigned_candidate": 65127,
+            "unsigned_candidate_delta": 65079,
+            "minimum_modular_delta": -457,
+            "previous_price": 2727.0,
+            "price": 2727,
+            "previous_volume": 69295608.0,
+            "volume": 68487908,
+            "same_quote_price": true
+          }
+        ],
+        "negative_row_volume_checks": {
+          "rows": 4950,
+          "strictly_positive_queue_volume_rows": 4950,
+          "unsigned_candidate_at_most_raw_queue_volume_rows": 4950,
+          "raw_queue_volume_divided_by_unsigned_candidate": {
+            "0": 954.1168831168832,
+            "0.25": 2319.745124214979,
+            "0.5": 8930.602667965188,
+            "0.75": 10145.272354349441,
+            "0.95": 20998.673031294744,
+            "1": 38228.644457139424
+          },
+          "units_caveat": "只比较源文件原始数值；委托量字段单位和每笔数量约束必须依据正式字段定义确认"
+        }
+      },
+      "bid_num_orders1": {
+        "context_minimum": -32766,
+        "context_maximum": 32767,
+        "all_values_within_signed_int16_range": true,
+        "all_adjacent_one_minute_pairs": 123006,
+        "pairs_touching_negative": {
+          "pairs": 3126,
+          "raw_absolute_delta": {
+            "0": 0.0,
+            "0.25": 19.0,
+            "0.5": 39.0,
+            "0.75": 76.0,
+            "0.95": 264.5,
+            "1": 65510.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 0.0,
+            "0.25": 19.0,
+            "0.5": 39.0,
+            "0.75": 76.0,
+            "0.95": 255.25,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 0.0,
+            "0.25": 19.0,
+            "0.5": 39.0,
+            "0.75": 76.0,
+            "0.95": 252.5,
+            "1": 32753.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 11,
+          "unsigned_candidate_larger_step_pairs": 41,
+          "unsigned_candidate_step_over_32768_pairs": 41,
+          "minimum_modular_step_at_most_4096_pairs": 3086,
+          "same_quote_price_pairs": 3126,
+          "both_queue_volumes_positive_pairs": 3126,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.0,
+            "0.25": 0.0005725170995312801,
+            "0.5": 0.0013957838068428313,
+            "0.75": 0.003478722949581628,
+            "0.95": 0.01693569417861495,
+            "1": 29034.77611111111
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 3065
+        },
+        "all_sign_changes": {
+          "pairs": 52,
+          "raw_absolute_delta": {
+            "0": 86.0,
+            "0.25": 23214.75,
+            "0.5": 29257.5,
+            "0.75": 32205.75,
+            "0.95": 65457.35,
+            "1": 65510.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 26.0,
+            "0.25": 33330.25,
+            "0.5": 36278.5,
+            "0.75": 42321.25,
+            "0.95": 54263.04999999995,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 26.0,
+            "0.25": 4481.0,
+            "0.5": 24032.0,
+            "0.75": 29849.5,
+            "0.95": 32084.05,
+            "1": 32753.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 11,
+          "unsigned_candidate_larger_step_pairs": 41,
+          "unsigned_candidate_step_over_32768_pairs": 41,
+          "minimum_modular_step_at_most_4096_pairs": 13,
+          "same_quote_price_pairs": 52,
+          "both_queue_volumes_positive_pairs": 52,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00014103140577816846,
+            "0.25": 0.8756087091309149,
+            "0.5": 8.73547209335247,
+            "0.75": 349.2286910589871,
+            "0.95": 3521.872722020521,
+            "1": 29034.77611111111
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 12
+        },
+        "sign_changes_at_same_quote_price": {
+          "pairs": 52,
+          "raw_absolute_delta": {
+            "0": 86.0,
+            "0.25": 23214.75,
+            "0.5": 29257.5,
+            "0.75": 32205.75,
+            "0.95": 65457.35,
+            "1": 65510.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 26.0,
+            "0.25": 33330.25,
+            "0.5": 36278.5,
+            "0.75": 42321.25,
+            "0.95": 54263.04999999995,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 26.0,
+            "0.25": 4481.0,
+            "0.5": 24032.0,
+            "0.75": 29849.5,
+            "0.95": 32084.05,
+            "1": 32753.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 11,
+          "unsigned_candidate_larger_step_pairs": 41,
+          "unsigned_candidate_step_over_32768_pairs": 41,
+          "minimum_modular_step_at_most_4096_pairs": 13,
+          "same_quote_price_pairs": 52,
+          "both_queue_volumes_positive_pairs": 52,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00014103140577816846,
+            "0.25": 0.8756087091309149,
+            "0.5": 8.73547209335247,
+            "0.75": 349.2286910589871,
+            "0.95": 3521.872722020521,
+            "1": 29034.77611111111
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 12
+        },
+        "signed_boundary_sign_changes": {
+          "pairs": 11,
+          "raw_absolute_delta": {
+            "0": 64977.0,
+            "0.25": 65179.0,
+            "0.5": 65433.0,
+            "0.75": 65459.5,
+            "0.95": 65506.0,
+            "1": 65510.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 26.0,
+            "0.25": 76.5,
+            "0.5": 103.0,
+            "0.75": 357.0,
+            "0.95": 531.0,
+            "1": 559.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 26.0,
+            "0.25": 76.5,
+            "0.5": 103.0,
+            "0.75": 357.0,
+            "0.95": 531.0,
+            "1": 559.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 11,
+          "unsigned_candidate_larger_step_pairs": 0,
+          "unsigned_candidate_step_over_32768_pairs": 0,
+          "minimum_modular_step_at_most_4096_pairs": 11,
+          "same_quote_price_pairs": 11,
+          "both_queue_volumes_positive_pairs": 11,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00014103140577816846,
+            "0.25": 0.004892241906801675,
+            "0.5": 0.017652207912255802,
+            "0.75": 0.02450385052188405,
+            "0.95": 0.030529242218372565,
+            "1": 0.03409807185048774
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 11
+        },
+        "signed_boundary_sign_changes_at_same_quote_price": {
+          "pairs": 11,
+          "raw_absolute_delta": {
+            "0": 64977.0,
+            "0.25": 65179.0,
+            "0.5": 65433.0,
+            "0.75": 65459.5,
+            "0.95": 65506.0,
+            "1": 65510.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 26.0,
+            "0.25": 76.5,
+            "0.5": 103.0,
+            "0.75": 357.0,
+            "0.95": 531.0,
+            "1": 559.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 26.0,
+            "0.25": 76.5,
+            "0.5": 103.0,
+            "0.75": 357.0,
+            "0.95": 531.0,
+            "1": 559.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 11,
+          "unsigned_candidate_larger_step_pairs": 0,
+          "unsigned_candidate_step_over_32768_pairs": 0,
+          "minimum_modular_step_at_most_4096_pairs": 11,
+          "same_quote_price_pairs": 11,
+          "both_queue_volumes_positive_pairs": 11,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00014103140577816846,
+            "0.25": 0.004892241906801675,
+            "0.5": 0.017652207912255802,
+            "0.75": 0.02450385052188405,
+            "0.95": 0.030529242218372565,
+            "1": 0.03409807185048774
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 11
+        },
+        "zero_boundary_sign_changes": {
+          "pairs": 2,
+          "raw_absolute_delta": {
+            "0": 86.0,
+            "0.25": 1003.25,
+            "0.5": 1920.5,
+            "0.75": 2837.75,
+            "0.95": 3571.5499999999997,
+            "1": 3755.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 61781.0,
+            "0.25": 62698.25,
+            "0.5": 63615.5,
+            "0.75": 64532.75,
+            "0.95": 65266.55,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 86.0,
+            "0.25": 1003.25,
+            "0.5": 1920.5,
+            "0.75": 2837.75,
+            "0.95": 3571.5499999999997,
+            "1": 3755.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 2,
+          "unsigned_candidate_step_over_32768_pairs": 2,
+          "minimum_modular_step_at_most_4096_pairs": 2,
+          "same_quote_price_pairs": 2,
+          "both_queue_volumes_positive_pairs": 2,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00021180491963203768,
+            "0.25": 68.88671025584345,
+            "0.5": 137.77320870676726,
+            "0.75": 206.6597071576911,
+            "0.95": 261.76890591843016,
+            "1": 275.5462056086149
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 1
+        },
+        "zero_boundary_sign_changes_at_same_quote_price": {
+          "pairs": 2,
+          "raw_absolute_delta": {
+            "0": 86.0,
+            "0.25": 1003.25,
+            "0.5": 1920.5,
+            "0.75": 2837.75,
+            "0.95": 3571.5499999999997,
+            "1": 3755.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 61781.0,
+            "0.25": 62698.25,
+            "0.5": 63615.5,
+            "0.75": 64532.75,
+            "0.95": 65266.55,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 86.0,
+            "0.25": 1003.25,
+            "0.5": 1920.5,
+            "0.75": 2837.75,
+            "0.95": 3571.5499999999997,
+            "1": 3755.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 2,
+          "unsigned_candidate_step_over_32768_pairs": 2,
+          "minimum_modular_step_at_most_4096_pairs": 2,
+          "same_quote_price_pairs": 2,
+          "both_queue_volumes_positive_pairs": 2,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00021180491963203768,
+            "0.25": 68.88671025584345,
+            "0.5": 137.77320870676726,
+            "0.75": 206.6597071576911,
+            "0.95": 261.76890591843016,
+            "1": 275.5462056086149
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 1
+        },
+        "zero_boundary_sign_changes_at_same_quote_price_and_at_most_five_percent_volume_change": {
+          "pairs": 1,
+          "raw_absolute_delta": {
+            "0": 86.0,
+            "0.25": 86.0,
+            "0.5": 86.0,
+            "0.75": 86.0,
+            "0.95": 86.0,
+            "1": 86.0
+          },
+          "unsigned_candidate_absolute_delta": {
+            "0": 65450.0,
+            "0.25": 65450.0,
+            "0.5": 65450.0,
+            "0.75": 65450.0,
+            "0.95": 65450.0,
+            "1": 65450.0
+          },
+          "minimum_modular_absolute_delta": {
+            "0": 86.0,
+            "0.25": 86.0,
+            "0.5": 86.0,
+            "0.75": 86.0,
+            "0.95": 86.0,
+            "1": 86.0
+          },
+          "unsigned_candidate_smaller_step_pairs": 0,
+          "unsigned_candidate_larger_step_pairs": 1,
+          "unsigned_candidate_step_over_32768_pairs": 1,
+          "minimum_modular_step_at_most_4096_pairs": 1,
+          "same_quote_price_pairs": 1,
+          "both_queue_volumes_positive_pairs": 1,
+          "absolute_queue_volume_relative_change_for_positive_volumes": {
+            "0": 0.00021180491963203768,
+            "0.25": 0.00021180491963203768,
+            "0.5": 0.00021180491963203768,
+            "0.75": 0.00021180491963203768,
+            "0.95": 0.00021180491963203768,
+            "1": 0.00021180491963203768
+          },
+          "queue_volume_relative_change_at_most_five_percent_pairs": 1
+        },
+        "witness_selection": "各类别按绝对最小模 65536 变化量、instrument_id、date 排序取前四条；类别统计包含全部相邻一分钟记录",
+        "signed_boundary_same_price_witnesses": [
+          {
+            "instrument_id": 3368,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-11-07T13:28:00.000",
+            "date": "2024-11-07T13:29:00.000",
+            "previous_value": 32767,
+            "value": -32743,
+            "raw_delta": -65510,
+            "previous_unsigned_candidate": 32767,
+            "unsigned_candidate": 32793,
+            "unsigned_candidate_delta": 26,
+            "minimum_modular_delta": 26,
+            "previous_price": 367.0,
+            "price": 367,
+            "previous_volume": 120931366.0,
+            "volume": 121855666,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 1084,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-11-25T11:15:00.000",
+            "date": "2024-11-25T11:16:00.000",
+            "previous_value": 32757,
+            "value": -32745,
+            "raw_delta": -65502,
+            "previous_unsigned_candidate": 32757,
+            "unsigned_candidate": 32791,
+            "unsigned_candidate_delta": 34,
+            "minimum_modular_delta": 34,
+            "previous_price": 668.0,
+            "price": 668,
+            "previous_volume": 225593737.0,
+            "volume": 226998747,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 354,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-11-04T11:02:00.000",
+            "date": "2024-11-04T11:03:00.000",
+            "previous_value": -32729,
+            "value": 32752,
+            "raw_delta": 65481,
+            "previous_unsigned_candidate": 32807,
+            "unsigned_candidate": 32752,
+            "unsigned_candidate_delta": -55,
+            "minimum_modular_delta": -55,
+            "previous_price": 905.0,
+            "price": 905,
+            "previous_volume": 146747748.0,
+            "volume": 146569948,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 1073,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-10-21T14:36:00.000",
+            "date": "2024-10-21T14:37:00.000",
+            "previous_value": 32732,
+            "value": -32706,
+            "raw_delta": -65438,
+            "previous_unsigned_candidate": 32732,
+            "unsigned_candidate": 32830,
+            "unsigned_candidate_delta": 98,
+            "minimum_modular_delta": 98,
+            "previous_price": 1291.0,
+            "price": 1291,
+            "previous_volume": 55720523.0,
+            "volume": 56836723,
+            "same_quote_price": true
+          }
+        ],
+        "zero_boundary_same_price_witnesses": [
+          {
+            "instrument_id": 1073,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-10-30T14:07:00.000",
+            "date": "2024-10-30T14:08:00.000",
+            "previous_value": -47,
+            "value": 39,
+            "raw_delta": 86,
+            "previous_unsigned_candidate": 65489,
+            "unsigned_candidate": 39,
+            "unsigned_candidate_delta": -65450,
+            "minimum_modular_delta": 86,
+            "previous_price": 1604.0,
+            "price": 1604,
+            "previous_volume": 137862709.0,
+            "volume": 137891909,
+            "same_quote_price": true
+          },
+          {
+            "instrument_id": 1084,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-11-26T09:24:00.000",
+            "date": "2024-11-26T09:25:00.000",
+            "previous_value": 0,
+            "value": -3755,
+            "raw_delta": -3755,
+            "previous_unsigned_candidate": 0,
+            "unsigned_candidate": 61781,
+            "unsigned_candidate_delta": 61781,
+            "minimum_modular_delta": -3755,
+            "previous_price": 735.0,
+            "price": 735,
+            "previous_volume": 1970540.0,
+            "volume": 544945360,
+            "same_quote_price": true
+          }
+        ],
+        "zero_boundary_same_price_and_stable_volume_witnesses": [
+          {
+            "instrument_id": 1073,
+            "field": "bid_num_orders1",
+            "previous_date": "2024-10-30T14:07:00.000",
+            "date": "2024-10-30T14:08:00.000",
+            "previous_value": -47,
+            "value": 39,
+            "raw_delta": 86,
+            "previous_unsigned_candidate": 65489,
+            "unsigned_candidate": 39,
+            "unsigned_candidate_delta": -65450,
+            "minimum_modular_delta": 86,
+            "previous_price": 1604.0,
+            "price": 1604,
+            "previous_volume": 137862709.0,
+            "volume": 137891909,
+            "same_quote_price": true
+          }
+        ],
+        "negative_row_volume_checks": {
+          "rows": 3134,
+          "strictly_positive_queue_volume_rows": 3134,
+          "unsigned_candidate_at_most_raw_queue_volume_rows": 3134,
+          "raw_queue_volume_divided_by_unsigned_candidate": {
+            "0": 696.1881340301261,
+            "0.25": 2406.0077320145974,
+            "0.5": 4128.224392545564,
+            "0.75": 5513.2381478515745,
+            "0.95": 6797.313612855859,
+            "1": 18670.377424837367
+          },
+          "units_caveat": "只比较源文件原始数值；委托量字段单位和每笔数量约束必须依据正式字段定义确认"
+        }
+      }
+    }
+  },
+  "production_data_changed": false
+}

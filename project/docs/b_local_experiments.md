@@ -8,4 +8,4 @@
 
 实验矩阵支持九种 A 候选和四种 B 主干、多窗口、多 seed、独立时间预算、状态报告和协议指纹。学习后的 token 不进入缓存。模型比较保持预处理、采样键、目标及预算一致。
 
-完整 CLI 见 [训练交接](b_training_handoff.md)，配置示例位于 [configs/](../configs/)。真实数据、派生统计、分区 cache 和诊断日志保留在授权环境。
+完整 CLI 见 [训练交接](b_training_handoff.md)，配置示例位于 [configs/](../configs/)。本地保存的数据、派生统计和诊断资料见 [完整归档](../../ARCHIVE.md)。

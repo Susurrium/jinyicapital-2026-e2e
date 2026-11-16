@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="5" skipped="0" tests="14" time="402.777" timestamp="2026-10-14T01:25:22.362038+08:00" hostname="susurrus"><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[R0]" time="0.851" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[R1]" time="0.545" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[R1-Book]" time="0.578" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[Net64]" time="0.632" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[Net192]" time="0.779" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[GroupedNet]" time="0.747" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[Patch1]" time="0.522" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[Patch5]" time="0.604" /><testcase classname="tests.test_checkpoint_inference" name="test_reference_bundle_preserves_weights_and_rng[DeepLOB]" time="0.809" /><testcase classname="tests.test_checkpoint_inference" name="test_modern_bundle_roundtrip_all_families[json-B-GRU]" time="60.723"><failure message="ptop.schema.ContractError: 模型包源码路径无效">inputs = (CanonicalData(values=                                open  high  ...  bid_num_orders3  ask_num_orders3
+datetime      ...',
+               '2024-01-03 09:33:00', '2024-01-03 09:34:00'],
+              dtype='datetime64[ns]', freq=None), ...)
+tmp_path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a0')
+name = 'B-GRU', weight_format = 'json'
+
+&gt;   ???
+
+E:\PtoP\work\repo-publication\tests\test_checkpoint_inference.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a0/B-GRU-json')
+
+    def load_bundle(path):
+        """仅恢复已训练模型和冻结处理器；不会 fit、下载依赖或执行携带源码。"""
+        source = Path(path)
+        manifest = _json_object(source / "manifest.json")
+        if type(manifest.get("bundle_version")) is not int:
+            raise ContractError("模型包版本缺失或无效")
+        if manifest["bundle_version"] == BUNDLE_VERSION:
+            # 原格式和严格依赖/合同检查完整保留；创建模板不改变调用方随机状态。
+            with torch.random.fork_rng(devices=[]):
+                try:
+                    return _load_reference_bundle(source)
+                except OSError as error:
+                    raise ContractError("模型包文件缺失或无法读取") from error
+        required = {"bundle_version", "schema_version", "fields", "qlib_commit", "qlib_components_version", "dependencies", "model_name",
+                    "model_spec", "window_length", "contracts", "seed", "training_record", "instrument_map",
+                    "files", "weight_format", "source_files", "execution"}
+        if set(manifest) != required or manifest["bundle_version"] != MODERN_BUNDLE_VERSION:
+            raise ContractError("模型包配置字段缺失、未知或版本不支持")
+        if type(manifest["qlib_components_version"]) is not int or manifest["qlib_components_version"] != COMPONENTS_VERSION:
+            raise ContractError("模型包内置 Qlib 组件版本不一致")
+        if manifest["schema_version"] != SCHEMA_VERSION or manifest["fields"] != list(FEATURES):
+            raise ContractError("模型包 schema 或字段顺序不一致")
+        if manifest["qlib_commit"] != QLIB_COMMIT or manifest["dependencies"] != dependency_versions():
+            raise ContractError("模型包 Qlib 来源或依赖版本与运行环境不一致")
+        if manifest["execution"] != execution_signature():
+            raise ContractError("模型包推理执行源码与当前实现不一致；请从携带的可信 source 复现")
+        spec = _model_spec_dict(manifest["model_spec"])
+        if (manifest["model_spec"] != spec or manifest["model_name"] != spec["name"] or type(manifest["window_length"]) is not int
+                or manifest["window_length"] &lt;= 0 or manifest["window_length"] != spec["lookback"]):
+            raise ContractError("模型包窗口或模型配置不一致")
+        _validate_contracts(manifest["contracts"])
+        if type(manifest["seed"]) is not int or not isinstance(manifest["training_record"], dict) or not manifest["training_record"]:
+            raise ContractError("模型包缺少有效随机种子或运行记录")
+        entries = manifest["instrument_map"]
+        if (not isinstance(entries, list) or any(not isinstance(entry, list) or len(entry) != 2 for entry in entries)
+                or len(dict(entries)) != len(entries)):
+            raise ContractError("模型包股票映射格式无效或键重复")
+        _validate_mapping(dict(entries))
+        weight_format = manifest["weight_format"]
+        if weight_format not in ("json", "torch"):
+            raise ContractError("模型包权重格式无效")
+        weight_name = "model.json" if weight_format == "json" else "model.pt"
+        portable_files = manifest["source_files"]
+        if (not isinstance(portable_files, list) or any(not isinstance(name, str) for name in portable_files)
+                or len(set(portable_files)) != len(portable_files)):
+            raise ContractError("模型包携带源码清单无效")
+        for name in portable_files:
+            parts = Path(name).parts
+            code = (len(parts) == 3 and parts[0] == "source" and parts[1] in ("ptop", "jyc_e2e") and parts[2].endswith(".py")) or name == "source/ptop/licenses/QLIB-MIT.txt"
+            license_file = len(parts) &gt;= 3 and parts[0] == "licenses" and parts[1] in manifest["dependencies"]
+            metadata_file = name in ("requirements.txt", "environment.json", "THIRD_PARTY.md")
+            if (name != str(Path(name)) or Path(name).is_absolute() or ".." in parts
+                    or not (code or license_file or metadata_file)):
+&gt;               raise ContractError("模型包源码路径无效")
+E               ptop.schema.ContractError: 模型包源码路径无效
+
+src/ptop/bundle.py:551: ContractError</failure></testcase><testcase classname="tests.test_checkpoint_inference" name="test_modern_bundle_roundtrip_all_families[json-B-Transformer]" time="60.725"><failure message="ptop.schema.ContractError: 模型包源码路径无效">inputs = (CanonicalData(values=                                open  high  ...  bid_num_orders3  ask_num_orders3
+datetime      ...',
+               '2024-01-03 09:33:00', '2024-01-03 09:34:00'],
+              dtype='datetime64[ns]', freq=None), ...)
+tmp_path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a1')
+name = 'B-Transformer', weight_format = 'json'
+
+&gt;   ???
+
+E:\PtoP\work\repo-publication\tests\test_checkpoint_inference.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a1/B-Transformer-json')
+
+    def load_bundle(path):
+        """仅恢复已训练模型和冻结处理器；不会 fit、下载依赖或执行携带源码。"""
+        source = Path(path)
+        manifest = _json_object(source / "manifest.json")
+        if type(manifest.get("bundle_version")) is not int:
+            raise ContractError("模型包版本缺失或无效")
+        if manifest["bundle_version"] == BUNDLE_VERSION:
+            # 原格式和严格依赖/合同检查完整保留；创建模板不改变调用方随机状态。
+            with torch.random.fork_rng(devices=[]):
+                try:
+                    return _load_reference_bundle(source)
+                except OSError as error:
+                    raise ContractError("模型包文件缺失或无法读取") from error
+        required = {"bundle_version", "schema_version", "fields", "qlib_commit", "qlib_components_version", "dependencies", "model_name",
+                    "model_spec", "window_length", "contracts", "seed", "training_record", "instrument_map",
+                    "files", "weight_format", "source_files", "execution"}
+        if set(manifest) != required or manifest["bundle_version"] != MODERN_BUNDLE_VERSION:
+            raise ContractError("模型包配置字段缺失、未知或版本不支持")
+        if type(manifest["qlib_components_version"]) is not int or manifest["qlib_components_version"] != COMPONENTS_VERSION:
+            raise ContractError("模型包内置 Qlib 组件版本不一致")
+        if manifest["schema_version"] != SCHEMA_VERSION or manifest["fields"] != list(FEATURES):
+            raise ContractError("模型包 schema 或字段顺序不一致")
+        if manifest["qlib_commit"] != QLIB_COMMIT or manifest["dependencies"] != dependency_versions():
+            raise ContractError("模型包 Qlib 来源或依赖版本与运行环境不一致")
+        if manifest["execution"] != execution_signature():
+            raise ContractError("模型包推理执行源码与当前实现不一致；请从携带的可信 source 复现")
+        spec = _model_spec_dict(manifest["model_spec"])
+        if (manifest["model_spec"] != spec or manifest["model_name"] != spec["name"] or type(manifest["window_length"]) is not int
+                or manifest["window_length"] &lt;= 0 or manifest["window_length"] != spec["lookback"]):
+            raise ContractError("模型包窗口或模型配置不一致")
+        _validate_contracts(manifest["contracts"])
+        if type(manifest["seed"]) is not int or not isinstance(manifest["training_record"], dict) or not manifest["training_record"]:
+            raise ContractError("模型包缺少有效随机种子或运行记录")
+        entries = manifest["instrument_map"]
+        if (not isinstance(entries, list) or any(not isinstance(entry, list) or len(entry) != 2 for entry in entries)
+                or len(dict(entries)) != len(entries)):
+            raise ContractError("模型包股票映射格式无效或键重复")
+        _validate_mapping(dict(entries))
+        weight_format = manifest["weight_format"]
+        if weight_format not in ("json", "torch"):
+            raise ContractError("模型包权重格式无效")
+        weight_name = "model.json" if weight_format == "json" else "model.pt"
+        portable_files = manifest["source_files"]
+        if (not isinstance(portable_files, list) or any(not isinstance(name, str) for name in portable_files)
+                or len(set(portable_files)) != len(portable_files)):
+            raise ContractError("模型包携带源码清单无效")
+        for name in portable_files:
+            parts = Path(name).parts
+            code = (len(parts) == 3 and parts[0] == "source" and parts[1] in ("ptop", "jyc_e2e") and parts[2].endswith(".py")) or name == "source/ptop/licenses/QLIB-MIT.txt"
+            license_file = len(parts) &gt;= 3 and parts[0] == "licenses" and parts[1] in manifest["dependencies"]
+            metadata_file = name in ("requirements.txt", "environment.json", "THIRD_PARTY.md")
+            if (name != str(Path(name)) or Path(name).is_absolute() or ".." in parts
+                    or not (code or license_file or metadata_file)):
+&gt;               raise ContractError("模型包源码路径无效")
+E               ptop.schema.ContractError: 模型包源码路径无效
+
+src/ptop/bundle.py:551: ContractError</failure></testcase><testcase classname="tests.test_checkpoint_inference" name="test_modern_bundle_roundtrip_all_families[json-B-TCN]" time="70.204"><failure message="ptop.schema.ContractError: 模型包源码路径无效">inputs = (CanonicalData(values=                                open  high  ...  bid_num_orders3  ask_num_orders3
+datetime      ...',
+               '2024-01-03 09:33:00', '2024-01-03 09:34:00'],
+              dtype='datetime64[ns]', freq=None), ...)
+tmp_path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a2')
+name = 'B-TCN', weight_format = 'json'
+
+&gt;   ???
+
+E:\PtoP\work\repo-publication\tests\test_checkpoint_inference.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a2/B-TCN-json')
+
+    def load_bundle(path):
+        """仅恢复已训练模型和冻结处理器；不会 fit、下载依赖或执行携带源码。"""
+        source = Path(path)
+        manifest = _json_object(source / "manifest.json")
+        if type(manifest.get("bundle_version")) is not int:
+            raise ContractError("模型包版本缺失或无效")
+        if manifest["bundle_version"] == BUNDLE_VERSION:
+            # 原格式和严格依赖/合同检查完整保留；创建模板不改变调用方随机状态。
+            with torch.random.fork_rng(devices=[]):
+                try:
+                    return _load_reference_bundle(source)
+                except OSError as error:
+                    raise ContractError("模型包文件缺失或无法读取") from error
+        required = {"bundle_version", "schema_version", "fields", "qlib_commit", "qlib_components_version", "dependencies", "model_name",
+                    "model_spec", "window_length", "contracts", "seed", "training_record", "instrument_map",
+                    "files", "weight_format", "source_files", "execution"}
+        if set(manifest) != required or manifest["bundle_version"] != MODERN_BUNDLE_VERSION:
+            raise ContractError("模型包配置字段缺失、未知或版本不支持")
+        if type(manifest["qlib_components_version"]) is not int or manifest["qlib_components_version"] != COMPONENTS_VERSION:
+            raise ContractError("模型包内置 Qlib 组件版本不一致")
+        if manifest["schema_version"] != SCHEMA_VERSION or manifest["fields"] != list(FEATURES):
+            raise ContractError("模型包 schema 或字段顺序不一致")
+        if manifest["qlib_commit"] != QLIB_COMMIT or manifest["dependencies"] != dependency_versions():
+            raise ContractError("模型包 Qlib 来源或依赖版本与运行环境不一致")
+        if manifest["execution"] != execution_signature():
+            raise ContractError("模型包推理执行源码与当前实现不一致；请从携带的可信 source 复现")
+        spec = _model_spec_dict(manifest["model_spec"])
+        if (manifest["model_spec"] != spec or manifest["model_name"] != spec["name"] or type(manifest["window_length"]) is not int
+                or manifest["window_length"] &lt;= 0 or manifest["window_length"] != spec["lookback"]):
+            raise ContractError("模型包窗口或模型配置不一致")
+        _validate_contracts(manifest["contracts"])
+        if type(manifest["seed"]) is not int or not isinstance(manifest["training_record"], dict) or not manifest["training_record"]:
+            raise ContractError("模型包缺少有效随机种子或运行记录")
+        entries = manifest["instrument_map"]
+        if (not isinstance(entries, list) or any(not isinstance(entry, list) or len(entry) != 2 for entry in entries)
+                or len(dict(entries)) != len(entries)):
+            raise ContractError("模型包股票映射格式无效或键重复")
+        _validate_mapping(dict(entries))
+        weight_format = manifest["weight_format"]
+        if weight_format not in ("json", "torch"):
+            raise ContractError("模型包权重格式无效")
+        weight_name = "model.json" if weight_format == "json" else "model.pt"
+        portable_files = manifest["source_files"]
+        if (not isinstance(portable_files, list) or any(not isinstance(name, str) for name in portable_files)
+                or len(set(portable_files)) != len(portable_files)):
+            raise ContractError("模型包携带源码清单无效")
+        for name in portable_files:
+            parts = Path(name).parts
+            code = (len(parts) == 3 and parts[0] == "source" and parts[1] in ("ptop", "jyc_e2e") and parts[2].endswith(".py")) or name == "source/ptop/licenses/QLIB-MIT.txt"
+            license_file = len(parts) &gt;= 3 and parts[0] == "licenses" and parts[1] in manifest["dependencies"]
+            metadata_file = name in ("requirements.txt", "environment.json", "THIRD_PARTY.md")
+            if (name != str(Path(name)) or Path(name).is_absolute() or ".." in parts
+                    or not (code or license_file or metadata_file)):
+&gt;               raise ContractError("模型包源码路径无效")
+E               ptop.schema.ContractError: 模型包源码路径无效
+
+src/ptop/bundle.py:551: ContractError</failure></testcase><testcase classname="tests.test_checkpoint_inference" name="test_modern_bundle_roundtrip_all_families[json-B-SelectiveSSM]" time="61.596"><failure message="ptop.schema.ContractError: 模型包源码路径无效">inputs = (CanonicalData(values=                                open  high  ...  bid_num_orders3  ask_num_orders3
+datetime      ...',
+               '2024-01-03 09:33:00', '2024-01-03 09:34:00'],
+              dtype='datetime64[ns]', freq=None), ...)
+tmp_path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a3')
+name = 'B-SelectiveSSM', weight_format = 'json'
+
+&gt;   ???
+
+E:\PtoP\work\repo-publication\tests\test_checkpoint_inference.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a3/B-SelectiveSSM-json')
+
+    def load_bundle(path):
+        """仅恢复已训练模型和冻结处理器；不会 fit、下载依赖或执行携带源码。"""
+        source = Path(path)
+        manifest = _json_object(source / "manifest.json")
+        if type(manifest.get("bundle_version")) is not int:
+            raise ContractError("模型包版本缺失或无效")
+        if manifest["bundle_version"] == BUNDLE_VERSION:
+            # 原格式和严格依赖/合同检查完整保留；创建模板不改变调用方随机状态。
+            with torch.random.fork_rng(devices=[]):
+                try:
+                    return _load_reference_bundle(source)
+                except OSError as error:
+                    raise ContractError("模型包文件缺失或无法读取") from error
+        required = {"bundle_version", "schema_version", "fields", "qlib_commit", "qlib_components_version", "dependencies", "model_name",
+                    "model_spec", "window_length", "contracts", "seed", "training_record", "instrument_map",
+                    "files", "weight_format", "source_files", "execution"}
+        if set(manifest) != required or manifest["bundle_version"] != MODERN_BUNDLE_VERSION:
+            raise ContractError("模型包配置字段缺失、未知或版本不支持")
+        if type(manifest["qlib_components_version"]) is not int or manifest["qlib_components_version"] != COMPONENTS_VERSION:
+            raise ContractError("模型包内置 Qlib 组件版本不一致")
+        if manifest["schema_version"] != SCHEMA_VERSION or manifest["fields"] != list(FEATURES):
+            raise ContractError("模型包 schema 或字段顺序不一致")
+        if manifest["qlib_commit"] != QLIB_COMMIT or manifest["dependencies"] != dependency_versions():
+            raise ContractError("模型包 Qlib 来源或依赖版本与运行环境不一致")
+        if manifest["execution"] != execution_signature():
+            raise ContractError("模型包推理执行源码与当前实现不一致；请从携带的可信 source 复现")
+        spec = _model_spec_dict(manifest["model_spec"])
+        if (manifest["model_spec"] != spec or manifest["model_name"] != spec["name"] or type(manifest["window_length"]) is not int
+                or manifest["window_length"] &lt;= 0 or manifest["window_length"] != spec["lookback"]):
+            raise ContractError("模型包窗口或模型配置不一致")
+        _validate_contracts(manifest["contracts"])
+        if type(manifest["seed"]) is not int or not isinstance(manifest["training_record"], dict) or not manifest["training_record"]:
+            raise ContractError("模型包缺少有效随机种子或运行记录")
+        entries = manifest["instrument_map"]
+        if (not isinstance(entries, list) or any(not isinstance(entry, list) or len(entry) != 2 for entry in entries)
+                or len(dict(entries)) != len(entries)):
+            raise ContractError("模型包股票映射格式无效或键重复")
+        _validate_mapping(dict(entries))
+        weight_format = manifest["weight_format"]
+        if weight_format not in ("json", "torch"):
+            raise ContractError("模型包权重格式无效")
+        weight_name = "model.json" if weight_format == "json" else "model.pt"
+        portable_files = manifest["source_files"]
+        if (not isinstance(portable_files, list) or any(not isinstance(name, str) for name in portable_files)
+                or len(set(portable_files)) != len(portable_files)):
+            raise ContractError("模型包携带源码清单无效")
+        for name in portable_files:
+            parts = Path(name).parts
+            code = (len(parts) == 3 and parts[0] == "source" and parts[1] in ("ptop", "jyc_e2e") and parts[2].endswith(".py")) or name == "source/ptop/licenses/QLIB-MIT.txt"
+            license_file = len(parts) &gt;= 3 and parts[0] == "licenses" and parts[1] in manifest["dependencies"]
+            metadata_file = name in ("requirements.txt", "environment.json", "THIRD_PARTY.md")
+            if (name != str(Path(name)) or Path(name).is_absolute() or ".." in parts
+                    or not (code or license_file or metadata_file)):
+&gt;               raise ContractError("模型包源码路径无效")
+E               ptop.schema.ContractError: 模型包源码路径无效
+
+src/ptop/bundle.py:551: ContractError</failure></testcase><testcase classname="tests.test_checkpoint_inference" name="test_modern_bundle_roundtrip_all_families[torch-B-GRU]" time="69.286"><failure message="ptop.schema.ContractError: 模型包源码路径无效">inputs = (CanonicalData(values=                                open  high  ...  bid_num_orders3  ask_num_orders3
+datetime      ...',
+               '2024-01-03 09:33:00', '2024-01-03 09:34:00'],
+              dtype='datetime64[ns]', freq=None), ...)
+tmp_path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a4')
+name = 'B-GRU', weight_format = 'torch'
+
+&gt;   ???
+
+E:\PtoP\work\repo-publication\tests\test_checkpoint_inference.py:131: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/mnt/e/PtoP/work/repo-publication/work/pytest-linux-no-qlib-sys/test_modern_bundle_roundtrip_a4/B-GRU-torch')
+
+    def load_bundle(path):
+        """仅恢复已训练模型和冻结处理器；不会 fit、下载依赖或执行携带源码。"""
+        source = Path(path)
+        manifest = _json_object(source / "manifest.json")
+        if type(manifest.get("bundle_version")) is not int:
+            raise ContractError("模型包版本缺失或无效")
+        if manifest["bundle_version"] == BUNDLE_VERSION:
+            # 原格式和严格依赖/合同检查完整保留；创建模板不改变调用方随机状态。
+            with torch.random.fork_rng(devices=[]):
+                try:
+                    return _load_reference_bundle(source)
+                except OSError as error:
+                    raise ContractError("模型包文件缺失或无法读取") from error
+        required = {"bundle_version", "schema_version", "fields", "qlib_commit", "qlib_components_version", "dependencies", "model_name",
+                    "model_spec", "window_length", "contracts", "seed", "training_record", "instrument_map",
+                    "files", "weight_format", "source_files", "execution"}
+        if set(manifest) != required or manifest["bundle_version"] != MODERN_BUNDLE_VERSION:
+            raise ContractError("模型包配置字段缺失、未知或版本不支持")
+        if type(manifest["qlib_components_version"]) is not int or manifest["qlib_components_version"] != COMPONENTS_VERSION:
+            raise ContractError("模型包内置 Qlib 组件版本不一致")
+        if manifest["schema_version"] != SCHEMA_VERSION or manifest["fields"] != list(FEATURES):
+            raise ContractError("模型包 schema 或字段顺序不一致")
+        if manifest["qlib_commit"] != QLIB_COMMIT or manifest["dependencies"] != dependency_versions():
+            raise ContractError("模型包 Qlib 来源或依赖版本与运行环境不一致")
+        if manifest["execution"] != execution_signature():
+            raise ContractError("模型包推理执行源码与当前实现不一致；请从携带的可信 source 复现")
+        spec = _model_spec_dict(manifest["model_spec"])
+        if (manifest["model_spec"] != spec or manifest["model_name"] != spec["name"] or type(manifest["window_length"]) is not int
+                or manifest["window_length"] &lt;= 0 or manifest["window_length"] != spec["lookback"]):
+            raise ContractError("模型包窗口或模型配置不一致")
+        _validate_contracts(manifest["contracts"])
+        if type(manifest["seed"]) is not int or not isinstance(manifest["training_record"], dict) or not manifest["training_record"]:
+            raise ContractError("模型包缺少有效随机种子或运行记录")
+        entries = manifest["instrument_map"]
+        if (not isinstance(entries, list) or any(not isinstance(entry, list) or len(entry) != 2 for entry in entries)
+                or len(dict(entries)) != len(entries)):
+            raise ContractError("模型包股票映射格式无效或键重复")
+        _validate_mapping(dict(entries))
+        weight_format = manifest["weight_format"]
+        if weight_format not in ("json", "torch"):
+            raise ContractError("模型包权重格式无效")
+        weight_name = "model.json" if weight_format == "json" else "model.pt"
+        portable_files = manifest["source_files"]
+        if (not isinstance(portable_files, list) or any(not isinstance(name, str) for name in portable_files)
+                or len(set(portable_files)) != len(portable_files)):
+            raise ContractError("模型包携带源码清单无效")
+        for name in portable_files:
+            parts = Path(name).parts
+            code = (len(parts) == 3 and parts[0] == "source" and parts[1] in ("ptop", "jyc_e2e") and parts[2].endswith(".py")) or name == "source/ptop/licenses/QLIB-MIT.txt"
+            license_file = len(parts) &gt;= 3 and parts[0] == "licenses" and parts[1] in manifest["dependencies"]
+            metadata_file = name in ("requirements.txt", "environment.json", "THIRD_PARTY.md")
+            if (name != str(Path(name)) or Path(name).is_absolute() or ".." in parts
+                    or not (code or license_file or metadata_file)):
+&gt;               raise ContractError("模型包源码路径无效")
+E               ptop.schema.ContractError: 模型包源码路径无效
+
+src/ptop/bundle.py:551: ContractError</failure></testcase><testcase time="0.084" /></testsuite></testsuites>

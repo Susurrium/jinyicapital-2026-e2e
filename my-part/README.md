@@ -33,4 +33,4 @@
 
 [开发验证记录](docs/开发验证记录.md)列出可公开验证材料；[内置组件验证](docs/内置Qlib组件验证.md)说明来源与等价检查。历史交接说明见 [handoff/](handoff/README.md)，归档文件见 [deliverables/](deliverables/)。
 
-Qlib 来源与许可见 [vendor/NOTICE.md](vendor/NOTICE.md) 和内置组件目录；历史 Windows wheel 随其对应许可证保存。原始行情、标签、映射和真实数值分析结果由授权环境提供。
+Qlib 来源与许可见 [vendor/NOTICE.md](vendor/NOTICE.md) 和内置组件目录；历史 Windows wheel 随其对应许可证保存。原始行情、标签、映射、完整文档和真实数据分析结果见 [完整归档](../ARCHIVE.md)。

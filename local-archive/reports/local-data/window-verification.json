@@ -1,0 +1,716 @@
+{
+  "scope": "observed local minutes and IDs; not official coverage denominator",
+  "production_visibility_verified": false,
+  "reference_grid_comparison": "passed",
+  "source_key_and_observed_comparison": "passed",
+  "counts": {
+    "samples": 97902,
+    "structural_slots": 3622374,
+    "real_slots": 8125866,
+    "fully_missing_real_slots": 10567,
+    "observed_fields": 200998880,
+    "unpredictable_samples": 0,
+    "maximum_length": 120
+  },
+  "sections": [
+    {
+      "decision_id": "audit:2023-08-01T09:16:00",
+      "decision_time": "2023-08-01T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T09:25:00",
+      "decision_time": "2023-08-01T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T09:31:00",
+      "decision_time": "2023-08-01T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T09:50:00",
+      "decision_time": "2023-08-01T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T10:20:00",
+      "decision_time": "2023-08-01T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T10:50:00",
+      "decision_time": "2023-08-01T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T11:20:00",
+      "decision_time": "2023-08-01T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T11:30:00",
+      "decision_time": "2023-08-01T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T13:01:00",
+      "decision_time": "2023-08-01T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T13:20:00",
+      "decision_time": "2023-08-01T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T13:50:00",
+      "decision_time": "2023-08-01T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T14:20:00",
+      "decision_time": "2023-08-01T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T14:50:00",
+      "decision_time": "2023-08-01T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-01T15:00:00",
+      "decision_time": "2023-08-01T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T09:16:00",
+      "decision_time": "2023-08-02T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T09:25:00",
+      "decision_time": "2023-08-02T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T09:31:00",
+      "decision_time": "2023-08-02T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T09:50:00",
+      "decision_time": "2023-08-02T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T10:20:00",
+      "decision_time": "2023-08-02T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T10:50:00",
+      "decision_time": "2023-08-02T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T11:20:00",
+      "decision_time": "2023-08-02T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T11:30:00",
+      "decision_time": "2023-08-02T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T13:01:00",
+      "decision_time": "2023-08-02T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T13:20:00",
+      "decision_time": "2023-08-02T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T13:50:00",
+      "decision_time": "2023-08-02T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T14:20:00",
+      "decision_time": "2023-08-02T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T14:50:00",
+      "decision_time": "2023-08-02T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-02T15:00:00",
+      "decision_time": "2023-08-02T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T09:16:00",
+      "decision_time": "2023-08-03T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T09:25:00",
+      "decision_time": "2023-08-03T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T09:31:00",
+      "decision_time": "2023-08-03T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T09:50:00",
+      "decision_time": "2023-08-03T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T10:20:00",
+      "decision_time": "2023-08-03T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T10:50:00",
+      "decision_time": "2023-08-03T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T11:20:00",
+      "decision_time": "2023-08-03T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T11:30:00",
+      "decision_time": "2023-08-03T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T13:01:00",
+      "decision_time": "2023-08-03T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T13:20:00",
+      "decision_time": "2023-08-03T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T13:50:00",
+      "decision_time": "2023-08-03T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T14:20:00",
+      "decision_time": "2023-08-03T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T14:50:00",
+      "decision_time": "2023-08-03T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-03T15:00:00",
+      "decision_time": "2023-08-03T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T09:16:00",
+      "decision_time": "2023-08-04T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T09:25:00",
+      "decision_time": "2023-08-04T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T09:31:00",
+      "decision_time": "2023-08-04T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T09:50:00",
+      "decision_time": "2023-08-04T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T10:20:00",
+      "decision_time": "2023-08-04T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T10:50:00",
+      "decision_time": "2023-08-04T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T11:20:00",
+      "decision_time": "2023-08-04T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T11:30:00",
+      "decision_time": "2023-08-04T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T13:01:00",
+      "decision_time": "2023-08-04T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T13:20:00",
+      "decision_time": "2023-08-04T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T13:50:00",
+      "decision_time": "2023-08-04T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T14:20:00",
+      "decision_time": "2023-08-04T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T14:50:00",
+      "decision_time": "2023-08-04T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-04T15:00:00",
+      "decision_time": "2023-08-04T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T09:16:00",
+      "decision_time": "2023-08-07T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T09:25:00",
+      "decision_time": "2023-08-07T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T09:31:00",
+      "decision_time": "2023-08-07T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T09:50:00",
+      "decision_time": "2023-08-07T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T10:20:00",
+      "decision_time": "2023-08-07T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T10:50:00",
+      "decision_time": "2023-08-07T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T11:20:00",
+      "decision_time": "2023-08-07T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T11:30:00",
+      "decision_time": "2023-08-07T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T13:01:00",
+      "decision_time": "2023-08-07T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T13:20:00",
+      "decision_time": "2023-08-07T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T13:50:00",
+      "decision_time": "2023-08-07T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T14:20:00",
+      "decision_time": "2023-08-07T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T14:50:00",
+      "decision_time": "2023-08-07T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-07T15:00:00",
+      "decision_time": "2023-08-07T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T09:16:00",
+      "decision_time": "2023-08-08T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T09:25:00",
+      "decision_time": "2023-08-08T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T09:31:00",
+      "decision_time": "2023-08-08T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T09:50:00",
+      "decision_time": "2023-08-08T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T10:20:00",
+      "decision_time": "2023-08-08T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T10:50:00",
+      "decision_time": "2023-08-08T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T11:20:00",
+      "decision_time": "2023-08-08T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T11:30:00",
+      "decision_time": "2023-08-08T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T13:01:00",
+      "decision_time": "2023-08-08T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T13:20:00",
+      "decision_time": "2023-08-08T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T13:50:00",
+      "decision_time": "2023-08-08T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T14:20:00",
+      "decision_time": "2023-08-08T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T14:50:00",
+      "decision_time": "2023-08-08T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-08T15:00:00",
+      "decision_time": "2023-08-08T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T09:16:00",
+      "decision_time": "2023-08-09T09:16:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T09:25:00",
+      "decision_time": "2023-08-09T09:25:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T09:31:00",
+      "decision_time": "2023-08-09T09:31:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T09:50:00",
+      "decision_time": "2023-08-09T09:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T10:20:00",
+      "decision_time": "2023-08-09T10:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T10:50:00",
+      "decision_time": "2023-08-09T10:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T11:20:00",
+      "decision_time": "2023-08-09T11:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T11:30:00",
+      "decision_time": "2023-08-09T11:30:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T13:01:00",
+      "decision_time": "2023-08-09T13:01:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T13:20:00",
+      "decision_time": "2023-08-09T13:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T13:50:00",
+      "decision_time": "2023-08-09T13:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T14:20:00",
+      "decision_time": "2023-08-09T14:20:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T14:50:00",
+      "decision_time": "2023-08-09T14:50:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    },
+    {
+      "decision_id": "audit:2023-08-09T15:00:00",
+      "decision_time": "2023-08-09T15:00:00",
+      "reference_ids": 999,
+      "predictable_ids": 999,
+      "unpredictable_fraction": 0.0
+    }
+  ],
+  "source_sha256": "0cc497a3c2d26c0a5fa2fe428fa7d2f2dea29f3b875851cc8e9ff18d4993c30d",
+  "fit_dates": [
+    "2023-08-01",
+    "2023-08-02",
+    "2023-08-03",
+    "2023-08-04",
+    "2023-08-07"
+  ],
+  "heldout_dates": [
+    "2023-08-08",
+    "2023-08-09"
+  ],
+  "elapsed_seconds": 40.78976749999856
+}

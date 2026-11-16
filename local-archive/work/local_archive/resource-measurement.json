@@ -1,0 +1,7 @@
+{
+  "process_id": 44108,
+  "peak_working_set_bytes": 872083456,
+  "samples": 301,
+  "sampling_started_at": "2026-10-11T22:38:32.6704735+08:00",
+  "measurement": "Windows Get-Process PeakWorkingSet64; lifetime high-water mark sampled while the process remained alive"
+}

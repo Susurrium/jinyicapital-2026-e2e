@@ -1,0 +1,10 @@
+/work/
+/.venv/
+/wheelhouse/
+/runs/
+/model-bundles/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/

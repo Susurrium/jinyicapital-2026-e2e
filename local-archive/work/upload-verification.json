@@ -1,0 +1,52 @@
+{
+  "checked_at_utc": "2026-11-16T11:07:45.503796+00:00",
+  "file_count_before_manifest": 174,
+  "python_source_copies_identical": 105,
+  "python_ast_passed": 105,
+  "xml_parsed": [
+    "my-part/reports/no-qlib-tests.xml",
+    "my-part/reports/test-results.xml",
+    "project/docs/qlib-reference-tests.xml"
+  ],
+  "zip_crc_checked": [
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.zip",
+      "members": 38
+    },
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.zip!ptop-A-to-BC-20261011/third_party/qlib-54355232463878d2eebb91fe0ee5fa7fa1f5976c.zip",
+      "members": 240
+    },
+    {
+      "path": "my-part/deliverables/ptop-source-20261014.zip",
+      "members": 30
+    },
+    {
+      "path": "my-part/vendor/wheels/pyqlib-0.0.0+git.54355232463878d2eebb91fe0ee5fa7fa1f5976c-cp312-cp312-win_amd64.whl",
+      "members": 293
+    },
+    {
+      "path": "project/01_比赛规则与参赛流程.docx",
+      "members": 17
+    },
+    {
+      "path": "project/02_量化名词与指标解释.docx",
+      "members": 17
+    },
+    {
+      "path": "project/03_模型架构与训练方案.docx",
+      "members": 17
+    },
+    {
+      "path": "project/04_团队分工与开发日程.docx",
+      "members": 17
+    },
+    {
+      "path": "project/端到端量化比赛入门与实施指南.docx",
+      "members": 17
+    }
+  ],
+  "broken_relative_markdown_links": [],
+  "restricted_file_or_credential_flags": [],
+  "scope": "Publication files only; no real market data accessed; no platform or financial performance validation"
+}

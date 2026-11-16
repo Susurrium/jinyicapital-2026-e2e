@@ -23,8 +23,19 @@
 
 历史记录对应其原始版本和环境。此次上传检查源码复制一致性、Python 语法、文件清单及归档完整性，并在 Windows CPU 环境运行个人模块的合成联合梯度、独立进程恢复和输出覆盖检查。结果见根目录 `UPLOAD_VERIFICATION.json`。金融预测效果、真实 DAI、正式标签合同、官方评分和平台提交均需独立验证。
 
-## 文件范围
+## 完整资料
 
-真实数据、非公开数据字典、标签与映射、受限统计和异常明细、真实数据分析报告、训练权重、凭据及运行环境保留在本地。Git 历史 bundle 和包含受限文档的历史整包也保留在本地。公开工程文档描述代码、接口和验证范围。
+`local-archive/` 按本地原始目录结构保存普通文件，包含原始 README 和归档说明、全部研究与数据文档、官方导出、真实数据统计和异常上下文、历史源码 ZIP、验证 XML、环境记录、PR 文本及辅助脚本。历史材料保持原文，状态与结论对应其原始日期和版本。
 
-`UPLOAD_MANIFEST.json` 记录本次上传文件的字节数及 SHA-256，便于下载后检查；清单自身不参与自身指纹。
+四个行情压缩包，以及 `work/local-data/first-member.feather` 和 `first-month.feather` 存于 [完整归档 Release](https://github.com/Susurrium/jinyicapital-2026-e2e/releases/tag/full-archive-2026-11-16)。大于 1 GiB 的文件按原始字节顺序分片；恢复时拼接并检查整文件 SHA-256。
+
+赛事结束后，项目所有者确认举办方允许上传这些资料。排除范围为本机 Python 环境、Git 元数据、Git 历史 bundle、环境缓存及本次上传的暂存目录。
+
+## 清单与恢复
+
+- `FULL_ARCHIVE_MANIFEST.json`：原始项目资料逐文件路径、大小、SHA-256、仓库副本或 Release 附件的对应关系。
+- `UPLOAD_MANIFEST.json`：当前归档分支所有文件的大小及 SHA-256，清单自身不参与自身指纹。
+- `UPLOAD_VERIFICATION.json`：初次源码归档的验证记录。
+- `FULL_UPLOAD_VERIFICATION.json`：补齐资料后的文件、原始快照和 Release 附件核验记录。
+
+完整目录恢复命令及校验方式见 [恢复说明](archive-tools/README.md)。

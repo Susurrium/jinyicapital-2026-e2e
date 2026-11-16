@@ -1,0 +1,23 @@
+{
+  "verified_files": 288,
+  "raw_archives_retained": 4,
+  "preserved_files_verified": 286,
+  "git_bundles": "passed",
+  "zip_checks": {
+    "ptop-A-to-BC-20261011.zip": {
+      "files": 38,
+      "crc_error": null
+    },
+    "ptop-repository-20261116.zip": {
+      "files": 88,
+      "crc_error": null
+    },
+    "ptop-source-20261014.zip": {
+      "files": 30,
+      "crc_error": null
+    }
+  },
+  "git_worktree_clean": true,
+  "git_fsck": "passed",
+  "errors": []
+}
