@@ -1,0 +1,1524 @@
+{
+  "status": "source_context_extracted_and_verified",
+  "scope": "异常出现月份内当月受影响 ID 的完整月行情；原始数值和字段类型保持不变。",
+  "source": {
+    "path": "E:\\PtoP\\data\\cpt_jyc_2026_e2e_bar1m.tar.gz",
+    "bytes": 11605295987,
+    "sha256": "325c17e9b4ebe440af16deacaa1f5184fb8f3f21d37010b6fec6d10df44130b3",
+    "matches_original_audit": true
+  },
+  "records_path": "E:\\PtoP\\work\\local_archive\\unknown-negative-records.parquet",
+  "verified_negative_records": 8084,
+  "output": {
+    "path": "E:\\PtoP\\work\\negative-cause\\context-1m.parquet",
+    "sha256": "965b21d6581973e2bf76d705be4e762f5c726926dc315c808719d2fd52fb331c",
+    "bytes": 5872056,
+    "rows": 124500,
+    "original_columns": 28,
+    "dtype_and_value_roundtrip": true
+  },
+  "members": [
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202408.0.feather",
+      "source_rows": 5493993,
+      "context_rows": 5500,
+      "instrument_ids": [
+        429
+      ],
+      "date_min": "2024-08-01 09:16:00",
+      "date_max": "2024-08-30 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202405.0.feather",
+      "source_rows": 4995546,
+      "context_rows": 5000,
+      "instrument_ids": [
+        1226
+      ],
+      "date_min": "2024-05-06 09:16:00",
+      "date_max": "2024-05-31 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202410.0.feather",
+      "source_rows": 4498125,
+      "context_rows": 18000,
+      "instrument_ids": [
+        16,
+        1073,
+        1199,
+        1970
+      ],
+      "date_min": "2024-10-08 09:16:00",
+      "date_max": "2024-10-31 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202103.0.feather",
+      "source_rows": 5744144,
+      "context_rows": 5750,
+      "instrument_ids": [
+        1263
+      ],
+      "date_min": "2021-03-01 09:16:00",
+      "date_max": "2021-03-31 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202412.0.feather",
+      "source_rows": 5496604,
+      "context_rows": 5500,
+      "instrument_ids": [
+        971
+      ],
+      "date_min": "2024-12-02 09:16:00",
+      "date_max": "2024-12-31 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202204.0.feather",
+      "source_rows": 4745161,
+      "context_rows": 4750,
+      "instrument_ids": [
+        869
+      ],
+      "date_min": "2022-04-01 09:16:00",
+      "date_max": "2022-04-29 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202002.0.feather",
+      "source_rows": 4994957,
+      "context_rows": 10000,
+      "instrument_ids": [
+        3241,
+        3765
+      ],
+      "date_min": "2020-02-03 09:16:00",
+      "date_max": "2020-02-28 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202407.0.feather",
+      "source_rows": 5743432,
+      "context_rows": 5750,
+      "instrument_ids": [
+        3329
+      ],
+      "date_min": "2024-07-01 09:16:00",
+      "date_max": "2024-07-31 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202409.0.feather",
+      "source_rows": 4735327,
+      "context_rows": 4750,
+      "instrument_ids": [
+        55
+      ],
+      "date_min": "2024-09-02 09:16:00",
+      "date_max": "2024-09-30 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202411.0.feather",
+      "source_rows": 5247341,
+      "context_rows": 52500,
+      "instrument_ids": [
+        16,
+        354,
+        613,
+        929,
+        1019,
+        1084,
+        1199,
+        3246,
+        3263,
+        3368
+      ],
+      "date_min": "2024-11-01 09:16:00",
+      "date_max": "2024-11-29 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202201.0.feather",
+      "source_rows": 4745158,
+      "context_rows": 4750,
+      "instrument_ids": [
+        125
+      ],
+      "date_min": "2022-01-04 09:16:00",
+      "date_max": "2022-01-28 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    },
+    {
+      "archive_member": "cpt_jyc_2026_e2e_bar1m/202406.0.feather",
+      "source_rows": 4745048,
+      "context_rows": 2250,
+      "instrument_ids": [
+        1226
+      ],
+      "date_min": "2024-06-03 09:16:00",
+      "date_max": "2024-06-14 15:00:00",
+      "source_schema": [
+        {
+          "name": "date",
+          "type": "timestamp[ns]"
+        },
+        {
+          "name": "instrument_id",
+          "type": "int16"
+        },
+        {
+          "name": "adjust_factor",
+          "type": "float"
+        },
+        {
+          "name": "high",
+          "type": "int32"
+        },
+        {
+          "name": "open",
+          "type": "int32"
+        },
+        {
+          "name": "low",
+          "type": "int32"
+        },
+        {
+          "name": "close",
+          "type": "int32"
+        },
+        {
+          "name": "deal_number",
+          "type": "int32"
+        },
+        {
+          "name": "volume",
+          "type": "int64"
+        },
+        {
+          "name": "amount",
+          "type": "int64"
+        },
+        {
+          "name": "ask_price1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_price3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_price3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "ask_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume1",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume2",
+          "type": "int32"
+        },
+        {
+          "name": "bid_volume3",
+          "type": "int32"
+        },
+        {
+          "name": "ask_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "ask_num_orders3",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders1",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders2",
+          "type": "int16"
+        },
+        {
+          "name": "bid_num_orders3",
+          "type": "int16"
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 77.782
+}

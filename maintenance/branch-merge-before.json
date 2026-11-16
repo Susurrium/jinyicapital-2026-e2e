@@ -1,0 +1,142 @@
+{
+  "checked_at_utc": "2026-11-16T13:13:46.095294+00:00",
+  "repository": "Susurrium/jinyicapital-2026-e2e",
+  "branches_before": {
+    "archive/full-project-2026-11-16": "36d47b6c06d5d7c71f71bdc8aef2aadb1a546082",
+    "codex/embed-qlib-source": "6f365938bdad7d2f3154377bafb91bde6115bafc",
+    "main": "7a6f1cd3b5910c3ec2be270d3eeb2283b1a1cb84"
+  },
+  "executable_source_matches_after_line_ending_normalization": true,
+  "publication_documentation_and_configuration_changes": [
+    "README.md",
+    "docs/archive_status.md",
+    "docs/b_data_reference.md",
+    "docs/b_local_experiments.md",
+    "docs/b_training_handoff.md",
+    "docs/b_verification.md",
+    "docs/objective_training_plan.md"
+  ],
+  "missing_git_configuration_to_restore": [
+    ".gitattributes",
+    ".gitignore"
+  ],
+  "development_source_files_preserved": 75,
+  "archive_documentation_changes": [
+    "README.md",
+    "docs/b_data_reference.md",
+    "docs/b_local_experiments.md",
+    "docs/b_training_handoff.md",
+    "docs/b_verification.md",
+    "docs/objective_training_plan.md",
+    "docs/stage_one_losses.md"
+  ],
+  "archive_added_documentation": [
+    "docs/archive_status.md",
+    "docs/qlib-reference-tests.xml"
+  ],
+  "main_is_ancestor_of_development": true,
+  "upstream_open_pr": "https://github.com/starrrkittty/jinyicapital-2026-e2e/pull/4",
+  "release_tag_commit": "0925d4329b11451107cb1bee17bebea474c7024d",
+  "release_assets": {
+    "754588666": {
+      "name": "cpt_jyc_2026_e2e_bar15m.tar.gz",
+      "size": 974562880,
+      "digest": "sha256:bee0df5b33cdd2001c082dea7b18e9191cbfd1dc1637d1beabdf3d3e6f513253"
+    },
+    "754577574": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part001",
+      "size": 1073741824,
+      "digest": "sha256:d6ced785e750ceca5e9c623bf38bd1727e0288ad51c0bf17ccd117f4d2c54d3a"
+    },
+    "754596849": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part002",
+      "size": 1073741824,
+      "digest": "sha256:de07fec230fc9d1f1a17e99e3f209f924656eb1755a3dbe2e4c437afa8ac8583"
+    },
+    "754596845": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part003",
+      "size": 1073741824,
+      "digest": "sha256:1fa7da0332df9527b9393c8f4be2ae53949df3e11db09c3feb6513ceb2da28c6"
+    },
+    "754596848": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part004",
+      "size": 1073741824,
+      "digest": "sha256:bd3d3e2ccafa7d8f352a25b07c5ce8b47412f832e9fe1fcd417254aa4f9154ad"
+    },
+    "754596846": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part005",
+      "size": 1073741824,
+      "digest": "sha256:92cfa01f60c61036bdf81fd56f9c9fd314c2c068d615119144041a0522fb84d9"
+    },
+    "754596847": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part006",
+      "size": 1073741824,
+      "digest": "sha256:971fda555e17ee0ec54b7bd2e9ccb6aaf73429aa926c1afe0fc8f381a7bd1406"
+    },
+    "754596858": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part007",
+      "size": 1073741824,
+      "digest": "sha256:b95c27083ae5deae56e72228557b5f06699dff06c4e706466ee0b5e8e1e8c76c"
+    },
+    "754596844": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part008",
+      "size": 1073741824,
+      "digest": "sha256:75d926e9f06f8fc723e5e9076e0b086f092af6bc254d08a3831c72d07c8312cb"
+    },
+    "754596859": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part009",
+      "size": 1073741824,
+      "digest": "sha256:22b939b4b48b5551e531a30bce73698f2b1a84c503d89038d26073f54fe90d08"
+    },
+    "754605289": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part010",
+      "size": 1073741824,
+      "digest": "sha256:d30e2566ce0e7416c77cda91610a2d30770fc2cad11a531a83e4d94cbbf585ff"
+    },
+    "754588649": {
+      "name": "cpt_jyc_2026_e2e_bar1m.tar.gz.part011",
+      "size": 867877747,
+      "digest": "sha256:500c85def1e0eee8f4a5ec7583d7d730be70212e45b49f755e88c746cd5b639a"
+    },
+    "754588695": {
+      "name": "cpt_jyc_2026_e2e_bar30m.tar.gz",
+      "size": 520651670,
+      "digest": "sha256:778662b2e40ddabfdddeb1abf2cdc52b72831cd2b8cee60f2aab8fb76a892cfb"
+    },
+    "754605286": {
+      "name": "cpt_jyc_2026_e2e_bar5m.tar.gz.part001",
+      "size": 1073741824,
+      "digest": "sha256:9d47ed7c288bdf71a64e954dbd0ba32e5573aef3b962a0fc0a0f24bd53a1c22c"
+    },
+    "754605282": {
+      "name": "cpt_jyc_2026_e2e_bar5m.tar.gz.part002",
+      "size": 1073741824,
+      "digest": "sha256:e3a23bbf4aff92448f310c0f932b22c2c948941a579b46ef877c3a8b706ca65b"
+    },
+    "754588643": {
+      "name": "cpt_jyc_2026_e2e_bar5m.tar.gz.part003",
+      "size": 536692192,
+      "digest": "sha256:d0dcb42523ffb8c29f18c237bf61aec712daf6e0880ab91852e9b9624d5e74f6"
+    },
+    "754564988": {
+      "name": "first-member.feather",
+      "size": 217705746,
+      "digest": "sha256:0cc497a3c2d26c0a5fa2fe428fa7d2f2dea29f3b875851cc8e9ff18d4993c30d"
+    },
+    "754581757": {
+      "name": "first-month.feather",
+      "size": 217705746,
+      "digest": "sha256:0cc497a3c2d26c0a5fa2fe428fa7d2f2dea29f3b875851cc8e9ff18d4993c30d"
+    },
+    "754681605": {
+      "name": "FULL_ARCHIVE_MANIFEST.json",
+      "size": 128650,
+      "digest": "sha256:29fb4f01137f34d635303c997fb16f828bbeb538f1d984481a560a3d0d450ce0"
+    },
+    "754681619": {
+      "name": "SHA256SUMS.txt",
+      "size": 1823,
+      "digest": "sha256:c328662c549cf5eee6f18ad0c3073120988a045ad1f0aedcce08fb8973fa5bfa"
+    }
+  }
+}

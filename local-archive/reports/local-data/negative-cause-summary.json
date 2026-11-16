@@ -1,0 +1,106 @@
+{
+  "scope": "read-only cause investigation; no production correction",
+  "original_archive_sha256": "325c17e9b4ebe440af16deacaa1f5184fb8f3f21d37010b6fec6d10df44130b3",
+  "context_rows": 124500,
+  "verified_negative_records": 8084,
+  "fields": {
+    "bid_num_orders1": {
+      "negative_rows": 3134,
+      "same_side_price_positive": 3134,
+      "same_side_volume_positive": 3134,
+      "opposite_price_missing": 3107,
+      "same_side_raw_volume_quantiles": {
+        "0": 24911700.0,
+        "0.25": 124025211.5,
+        "0.5": 174619210.5,
+        "0.75": 223081978.25,
+        "1": 637145300.0
+      },
+      "signed_boundary_pairs": 11,
+      "signed_boundary_same_price_pairs": 11,
+      "signed_boundary_stable_volume_pairs": 11,
+      "zero_boundary_pairs": 2,
+      "zero_boundary_same_price_stable_volume_pairs": 1
+    },
+    "ask_num_orders1": {
+      "negative_rows": 4950,
+      "same_side_price_positive": 4950,
+      "same_side_volume_positive": 4950,
+      "opposite_price_missing": 4923,
+      "same_side_raw_volume_quantiles": {
+        "0": 32619348.0,
+        "0.25": 94865175.0,
+        "0.5": 350802238.0,
+        "0.75": 458846973.25,
+        "1": 1619409573.0
+      },
+      "signed_boundary_pairs": 32,
+      "signed_boundary_same_price_pairs": 32,
+      "signed_boundary_stable_volume_pairs": 32,
+      "zero_boundary_pairs": 9,
+      "zero_boundary_same_price_stable_volume_pairs": 6
+    }
+  },
+  "cross_frequency": {
+    "30m": {
+      "matched_anomaly_keys": 296,
+      "same_raw_value": 296,
+      "different_raw_value": 0
+    },
+    "15m": {
+      "matched_anomaly_keys": 567,
+      "same_raw_value": 567,
+      "different_raw_value": 0
+    },
+    "5m": {
+      "matched_anomaly_keys": 1649,
+      "same_raw_value": 1649,
+      "different_raw_value": 0
+    }
+  },
+  "numpy_version": "2.2.6",
+  "synthetic_narrowing_demonstration": [
+    {
+      "synthetic_int32": 32765,
+      "numpy_int16_cast": 32765
+    },
+    {
+      "synthetic_int32": 32767,
+      "numpy_int16_cast": 32767
+    },
+    {
+      "synthetic_int32": 32768,
+      "numpy_int16_cast": -32768
+    },
+    {
+      "synthetic_int32": 32787,
+      "numpy_int16_cast": -32749
+    },
+    {
+      "synthetic_int32": 32793,
+      "numpy_int16_cast": -32743
+    },
+    {
+      "synthetic_int32": 65503,
+      "numpy_int16_cast": -33
+    },
+    {
+      "synthetic_int32": 65535,
+      "numpy_int16_cast": -1
+    },
+    {
+      "synthetic_int32": 65536,
+      "numpy_int16_cast": 0
+    },
+    {
+      "synthetic_int32": 65547,
+      "numpy_int16_cast": 11
+    }
+  ],
+  "interpretation_limits": [
+    "cloud int32 original values not obtained",
+    "export transformation code not obtained",
+    "multiple nonnegative counts have the same int16 representation",
+    "book volume unit not inferred"
+  ]
+}

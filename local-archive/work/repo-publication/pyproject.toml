@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinyicapital-e2e"
+version = "0.1.0"
+description = "Research scaffold for the 2026 Jinyi Capital end-to-end track"
+requires-python = ">=3.10"
+dependencies = ["numpy==2.2.6", "pandas==2.2.3", "pyarrow==20.0.0", "torch==2.8.0"]
+
+[project.optional-dependencies]
+contest = [
+    "torch==2.8.0",
+    "pandas==2.2.3",
+    "pyarrow==20.0.0",
+]
+test = ["pytest==8.4.2"]
+
+[project.scripts]
+ptop-train = "ptop.train:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"ptop._vendor.qlib" = ["LICENSE", "SOURCE.md"]
+ptop = ["licenses/*.txt"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "--basetemp=work/pytest-temp"
+cache_dir = "work/pytest-cache"

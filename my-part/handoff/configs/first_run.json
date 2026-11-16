@@ -1,0 +1,28 @@
+{
+  "configuration_role": "first_joint_training_starting_configuration",
+  "data_source": "cloud",
+  "model_name": "R1",
+  "normalization": "N1",
+  "window_length": 120,
+  "cross_day_windows": false,
+  "objective": "MSE",
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "max_epochs": 200,
+  "early_stop_patience": 20,
+  "gradient_clip": {"method": "value", "absolute_limit": 3.0},
+  "batch_unit": "complete_decision_cross_section",
+  "seed": 17,
+  "model_dtype": "float32",
+  "extra_manual_preflight": "deferred_by_user",
+  "required_runtime_inputs": [
+    "authorized_train_and_validation_dates",
+    "datasources",
+    "instrument_map",
+    "trading_grid",
+    "label_support",
+    "label_spec",
+    "visibility_contract",
+    "device"
+  ]
+}

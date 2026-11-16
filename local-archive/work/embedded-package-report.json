@@ -1,0 +1,20 @@
+{
+  "package_import": "E:\\PtoP\\work\\repo-publication\\work\\package-installed\\ptop\\__init__.py",
+  "qlib_installed": false,
+  "installed_model_roundtrips": [
+    "R0",
+    "R1",
+    "R1-Book",
+    "Net64",
+    "Net192",
+    "GroupedNet",
+    "Patch1",
+    "Patch5",
+    "DeepLOB"
+  ],
+  "source_zip": "E:\\PtoP\\deliverables\\ptop-source-20261014.zip",
+  "zip_files": 30,
+  "zip_bytes": 58938,
+  "zip_sha256": "224eeb97dc63fc2b001bf0715064c03b06bd1801baa58cc49cfb8a1bd74b919c",
+  "crc_and_content_match": true
+}

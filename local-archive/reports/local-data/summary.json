@@ -1,0 +1,480 @@
+{
+  "source": {
+    "path": "E:\\PtoP\\data\\cpt_jyc_2026_e2e_bar1m.tar.gz",
+    "bytes": 11605295987,
+    "sha256": "325c17e9b4ebe440af16deacaa1f5184fb8f3f21d37010b6fec6d10df44130b3"
+  },
+  "source_status": "source_contract_violations",
+  "row_count": 302545707,
+  "members": 60,
+  "observed_date_min": "2020-01-02",
+  "observed_date_max": "2024-12-31",
+  "observed_date_count": 1212,
+  "observed_instrument_id_count": 1912,
+  "observed_time_of_day_count": 250,
+  "schema_consistent": true,
+  "fields": {
+    "open": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 0,
+      "sentinel_missing": 1041906,
+      "observed": 301503801
+    },
+    "high": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 0,
+      "sentinel_missing": 1041906,
+      "observed": 301503801
+    },
+    "low": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 0,
+      "sentinel_missing": 1041906,
+      "observed": 301503801
+    },
+    "close": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 0,
+      "sentinel_missing": 1041906,
+      "observed": 301503801
+    },
+    "volume": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16820083,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "amount": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16820296,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "deal_number": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16820083,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "bid_price1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 1700590,
+      "sentinel_missing": 1700590,
+      "observed": 300845117
+    },
+    "ask_price1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 3135170,
+      "sentinel_missing": 3135170,
+      "observed": 299410537
+    },
+    "bid_price2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 14767615,
+      "sentinel_missing": 14767615,
+      "observed": 287778092
+    },
+    "ask_price2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16193247,
+      "sentinel_missing": 16193247,
+      "observed": 286352460
+    },
+    "bid_price3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 14621868,
+      "sentinel_missing": 14621868,
+      "observed": 287923839
+    },
+    "ask_price3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16066984,
+      "sentinel_missing": 16066984,
+      "observed": 286478723
+    },
+    "bid_volume1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 1756761,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "ask_volume1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 3225517,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "bid_volume2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 8008335,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "ask_volume2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 10498899,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "bid_volume3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 14871617,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "ask_volume3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16346391,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "bid_num_orders1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 3134,
+      "zero": 14758739,
+      "sentinel_missing": 0,
+      "observed": 302542573
+    },
+    "ask_num_orders1": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 4950,
+      "zero": 16227745,
+      "sentinel_missing": 0,
+      "observed": 302540757
+    },
+    "bid_num_orders2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 14823364,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "ask_num_orders2": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16295489,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "bid_num_orders3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 14871856,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    },
+    "ask_num_orders3": {
+      "null": 0,
+      "nan": 0,
+      "infinite": 0,
+      "unknown_negative": 0,
+      "zero": 16346391,
+      "sentinel_missing": 0,
+      "observed": 302545707
+    }
+  },
+  "cross_field_diagnostics": {
+    "ask1_missing_price_num_orders_positive": 0,
+    "ask1_missing_price_num_orders_zero": 3135170,
+    "ask1_missing_price_volume_positive": 0,
+    "ask1_missing_price_volume_zero": 3135170,
+    "ask2_missing_price_num_orders_positive": 239,
+    "ask2_missing_price_num_orders_zero": 16193008,
+    "ask2_missing_price_volume_positive": 5796829,
+    "ask2_missing_price_volume_zero": 10396418,
+    "ask3_missing_price_num_orders_positive": 0,
+    "ask3_missing_price_num_orders_zero": 16066984,
+    "ask3_missing_price_volume_positive": 0,
+    "ask3_missing_price_volume_zero": 16066984,
+    "ask_levels_1_2_comparable": 286352460,
+    "ask_levels_1_2_inverted": 10379,
+    "ask_levels_2_3_comparable": 286304796,
+    "ask_levels_2_3_inverted": 9848,
+    "bid1_missing_price_num_orders_positive": 0,
+    "bid1_missing_price_num_orders_zero": 1700590,
+    "bid1_missing_price_volume_positive": 0,
+    "bid1_missing_price_volume_zero": 1700590,
+    "bid2_missing_price_num_orders_positive": 239,
+    "bid2_missing_price_num_orders_zero": 14767376,
+    "bid2_missing_price_volume_positive": 6815268,
+    "bid2_missing_price_volume_zero": 7952347,
+    "bid3_missing_price_num_orders_positive": 0,
+    "bid3_missing_price_num_orders_zero": 14621868,
+    "bid3_missing_price_volume_positive": 0,
+    "bid3_missing_price_volume_zero": 14621868,
+    "bid_levels_1_2_comparable": 287778092,
+    "bid_levels_1_2_inverted": 3388,
+    "bid_levels_2_3_comparable": 287731113,
+    "bid_levels_2_3_inverted": 3313,
+    "close_outside_low_high": 0,
+    "crossed_top_book": 14183,
+    "high_below_low": 0,
+    "locked_top_book": 13100757,
+    "ohlc_comparable_rows": 301503801,
+    "open_outside_low_high": 0,
+    "top_book_comparable_rows": 298790510
+  },
+  "negative_values": {
+    "unknown_negative_values": 8084,
+    "affected_bar_keys": 8084,
+    "affected_instruments": 22,
+    "affected_dates": 39,
+    "fields": {
+      "ask_num_orders1": {
+        "count": 4950,
+        "negative_min": -32768,
+        "negative_max": -33,
+        "instrument_count": 14,
+        "date_min": "2020-02-11 09:51:00",
+        "date_max": "2024-11-27 11:28:00",
+        "source_arrow_types": [
+          "int16"
+        ]
+      },
+      "bid_num_orders1": {
+        "count": 3134,
+        "negative_min": -32766,
+        "negative_max": -47,
+        "instrument_count": 10,
+        "date_min": "2020-02-05 09:31:00",
+        "date_max": "2024-12-09 09:39:00",
+        "source_arrow_types": [
+          "int16"
+        ]
+      }
+    },
+    "by_member": {
+      "cpt_jyc_2026_e2e_bar1m/202002.0.feather": 222,
+      "cpt_jyc_2026_e2e_bar1m/202103.0.feather": 187,
+      "cpt_jyc_2026_e2e_bar1m/202201.0.feather": 313,
+      "cpt_jyc_2026_e2e_bar1m/202204.0.feather": 288,
+      "cpt_jyc_2026_e2e_bar1m/202405.0.feather": 594,
+      "cpt_jyc_2026_e2e_bar1m/202406.0.feather": 281,
+      "cpt_jyc_2026_e2e_bar1m/202407.0.feather": 239,
+      "cpt_jyc_2026_e2e_bar1m/202408.0.feather": 323,
+      "cpt_jyc_2026_e2e_bar1m/202409.0.feather": 202,
+      "cpt_jyc_2026_e2e_bar1m/202410.0.feather": 1830,
+      "cpt_jyc_2026_e2e_bar1m/202411.0.feather": 3595,
+      "cpt_jyc_2026_e2e_bar1m/202412.0.feather": 10
+    }
+  },
+  "diagnostic_dates": {
+    "fit": [
+      "2023-08-01",
+      "2023-08-02",
+      "2023-08-03",
+      "2023-08-04",
+      "2023-08-07"
+    ],
+    "heldout": [
+      "2023-08-08",
+      "2023-08-09"
+    ]
+  },
+  "diagnostic_raw_rows": 1746470,
+  "diagnostic_fit_unique_rows": 1247537,
+  "window_scope": "observed local minutes and IDs; not official coverage denominator",
+  "window_counts": {
+    "samples": 97902,
+    "structural_slots": 3622374,
+    "real_slots": 8125866,
+    "fully_missing_real_slots": 10567,
+    "observed_fields": 200998880,
+    "unpredictable_samples": 0,
+    "maximum_length": 120
+  },
+  "window_reference_comparison": "passed",
+  "normalization_comparison": {
+    "N0": {
+      "degenerate_fields": [],
+      "zero_variance_fields": [],
+      "activation_abs_ge_0_99": {
+        "17": 0.15832040845247844,
+        "43": 0.14673120995493769,
+        "101": 0.15988720282913535
+      },
+      "activation_abs_ge_0_99_by_split": {
+        "17": {
+          "fit": 0.16345410747336553,
+          "heldout": 0.14548405672705553
+        },
+        "43": {
+          "fit": 0.15250931685793687,
+          "heldout": 0.13228357439776484
+        },
+        "101": {
+          "fit": 0.16519439904387606,
+          "heldout": 0.14661703700697287
+        }
+      },
+      "price_float32_collision_pairs": 0,
+      "maximum_price_reconstruction_error": 1.0630706697156711e-05,
+      "state_unchanged": true,
+      "model_checks": {
+        "scope": "randomly initialized R1; no labels and no optimizer update",
+        "samples": 64,
+        "batch_invariance": "passed",
+        "attention_mask": "passed",
+        "gradient_finiteness": "passed",
+        "future_bar_mutation": "passed",
+        "future_rows_changed": 1745471,
+        "gradient_norms": {
+          "encoder.net.fc_in.weight": 0.8165952563285828,
+          "encoder.net.fc_in.bias": 0.14133267104625702,
+          "rnn.weight_ih_l0": 0.7340377569198608,
+          "rnn.weight_hh_l0": 0.22352883219718933,
+          "rnn.bias_ih_l0": 0.28447043895721436,
+          "rnn.bias_hh_l0": 0.14852796494960785,
+          "rnn.weight_ih_l1": 0.8215532898902893,
+          "rnn.weight_hh_l1": 0.26001349091529846,
+          "rnn.bias_ih_l1": 0.5473992824554443,
+          "rnn.bias_hh_l1": 0.27459725737571716,
+          "att_net.att_fc_in.weight": 0.002236755099147558,
+          "att_net.att_fc_in.bias": 4.214032378513366e-05,
+          "att_net.att_fc_out.weight": 0.0013579817023128271,
+          "fc_out.weight": 1.299164056777954,
+          "fc_out.bias": 1.0
+        }
+      }
+    },
+    "N1": {
+      "degenerate_fields": [],
+      "zero_variance_fields": [],
+      "activation_abs_ge_0_99": {
+        "17": 0.0037171498078982174,
+        "43": 0.0024188881715689363,
+        "101": 0.003843735506478783
+      },
+      "activation_abs_ge_0_99_by_split": {
+        "17": {
+          "fit": 0.0037525064386867884,
+          "heldout": 0.0036287437391393233
+        },
+        "43": {
+          "fit": 0.0024099736120050948,
+          "heldout": 0.0024411782243307215
+        },
+        "101": {
+          "fit": 0.003883013589977692,
+          "heldout": 0.0037455241986398976
+        }
+      },
+      "price_float32_collision_pairs": 0,
+      "maximum_price_reconstruction_error": 1.3634914694193867e-05,
+      "state_unchanged": true,
+      "model_checks": {
+        "scope": "randomly initialized R1; no labels and no optimizer update",
+        "samples": 64,
+        "batch_invariance": "passed",
+        "attention_mask": "passed",
+        "gradient_finiteness": "passed",
+        "future_bar_mutation": "passed",
+        "future_rows_changed": 1745471,
+        "gradient_norms": {
+          "encoder.net.fc_in.weight": 0.8978369832038879,
+          "encoder.net.fc_in.bias": 0.1820388287305832,
+          "rnn.weight_ih_l0": 0.7678506970405579,
+          "rnn.weight_hh_l0": 0.23086313903331757,
+          "rnn.bias_ih_l0": 0.3031434416770935,
+          "rnn.bias_hh_l0": 0.16177399456501007,
+          "rnn.weight_ih_l1": 0.8018474578857422,
+          "rnn.weight_hh_l1": 0.2708819806575775,
+          "rnn.bias_ih_l1": 0.555110514163971,
+          "rnn.bias_hh_l1": 0.2809048891067505,
+          "att_net.att_fc_in.weight": 0.00038869876880198717,
+          "att_net.att_fc_in.bias": 6.654811386397341e-06,
+          "att_net.att_fc_out.weight": 0.0002385627303738147,
+          "fc_out.weight": 1.3367838859558105,
+          "fc_out.bias": 1.0
+        }
+      }
+    }
+  },
+  "timing_seconds": {
+    "full_archive": 516.821,
+    "seven_day_preflight": 406.4237295999992,
+    "reference_window_verification": 40.78976749999856
+  },
+  "formal_training_eligible": false,
+  "remaining_inputs": [
+    "official_sampling_grid",
+    "instrument_code_mapping",
+    "target_support",
+    "authorized_formal_training_dates"
+  ],
+  "interpretation": {
+    "activation_denominator": "unique predictable raw rows times 64 channels; random initialization only",
+    "window_denominator": "overlapping local audit window slots; not official coverage denominator",
+    "price_group_comparison": "fit/heldout scale reports use their own close medians; activation groups use all seven days",
+    "future_mutation_scope": "fixed transformed rows; preprocessor not refitted",
+    "normalization_selection": "review scale, price resolution and actual activation diagnostics before choosing a formal candidate",
+    "negative_values": "source definition or corrected source required; no deletion, zero filling, or unsigned conversion"
+  }
+}

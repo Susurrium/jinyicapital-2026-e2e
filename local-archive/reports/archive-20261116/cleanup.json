@@ -1,0 +1,261 @@
+{
+  "date": "2026-11-16",
+  "measured_logical_bytes_removed": 6254835868,
+  "entries": [
+    {
+      "path": "handoff/examples/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "src/ptop.egg-info",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "src/ptop/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "src/ptop/_vendor/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "src/ptop/_vendor/qlib/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "tests/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "tools/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/deps",
+      "status": "removed",
+      "logical_bytes": 88548123
+    },
+    {
+      "path": "work/handoff-staging",
+      "status": "removed",
+      "logical_bytes": 6514904
+    },
+    {
+      "path": "work/handoff-unpacked",
+      "status": "removed",
+      "logical_bytes": 6871758
+    },
+    {
+      "path": "work/pytest-cache",
+      "status": "removed",
+      "logical_bytes": 21482
+    },
+    {
+      "path": "work/pytest-data",
+      "status": "removed",
+      "logical_bytes": 13506
+    },
+    {
+      "path": "work/pytest-final",
+      "status": "removed",
+      "logical_bytes": 18436323
+    },
+    {
+      "path": "work/pytest-full",
+      "status": "removed",
+      "logical_bytes": 1538981
+    },
+    {
+      "path": "work/pytest-integration",
+      "status": "removed",
+      "logical_bytes": 1275888
+    },
+    {
+      "path": "work/pytest-local-final",
+      "status": "removed",
+      "logical_bytes": 20266051
+    },
+    {
+      "path": "work/pytest-local-real",
+      "status": "removed",
+      "logical_bytes": 20120537
+    },
+    {
+      "path": "work/pytest-negative-cause",
+      "status": "removed",
+      "logical_bytes": 8617
+    },
+    {
+      "path": "work/pytest-numeric",
+      "status": "removed",
+      "logical_bytes": 27036
+    },
+    {
+      "path": "work/pytest-preflight",
+      "status": "removed",
+      "logical_bytes": 1235114
+    },
+    {
+      "path": "work/pytest-preflight-review",
+      "status": "removed",
+      "logical_bytes": 1238017
+    },
+    {
+      "path": "work/pytest-preprocessing",
+      "status": "removed",
+      "logical_bytes": 11465
+    },
+    {
+      "path": "work/pytest-preprocessing-audit",
+      "status": "removed",
+      "logical_bytes": 11465
+    },
+    {
+      "path": "work/pytest-temp",
+      "status": "removed",
+      "logical_bytes": 37265359
+    },
+    {
+      "path": "work/python-temp",
+      "status": "removed",
+      "logical_bytes": 0
+    },
+    {
+      "path": "work/repo-publication/build",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/examples/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/src/jinyicapital_e2e.egg-info",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/src/jyc_e2e/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/src/ptop/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/src/ptop/_vendor/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/src/ptop/_vendor/qlib/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/tests/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/validation/__pycache__",
+      "status": "removed",
+      "logical_bytes": null
+    },
+    {
+      "path": "work/repo-publication/work/linux-cache",
+      "status": "removed",
+      "logical_bytes": 976759691
+    },
+    {
+      "path": "work/repo-publication/work/linux-python",
+      "status": "removed",
+      "logical_bytes": 103484457
+    },
+    {
+      "path": "work/repo-publication/work/linux-tools",
+      "status": "removed",
+      "logical_bytes": 70561582
+    },
+    {
+      "path": "work/repo-publication/work/linux-venv",
+      "status": "removed",
+      "logical_bytes": 994526996
+    },
+    {
+      "path": "work/repo-publication/work/package-check",
+      "status": "removed",
+      "logical_bytes": 48527
+    },
+    {
+      "path": "work/repo-publication/work/package-installed",
+      "status": "removed",
+      "logical_bytes": 256178
+    },
+    {
+      "path": "work/repo-publication/work/pytest-cache",
+      "status": "removed",
+      "logical_bytes": 29301
+    },
+    {
+      "path": "work/repo-publication/work/pytest-linux-cache",
+      "status": "removed",
+      "logical_bytes": 30226
+    },
+    {
+      "path": "work/repo-publication/work/pytest-linux-diagnose",
+      "status": "removed",
+      "logical_bytes": 1269477
+    },
+    {
+      "path": "work/repo-publication/work/pytest-linux-diagnose-cache",
+      "status": "removed",
+      "logical_bytes": 1433
+    },
+    {
+      "path": "work/repo-publication/work/pytest-linux-integrated-final",
+      "status": "removed",
+      "logical_bytes": 21946958
+    },
+    {
+      "path": "work/repo-publication/work/pytest-linux-no-qlib-sys",
+      "status": "removed",
+      "logical_bytes": 23087628
+    },
+    {
+      "path": "work/repo-publication/work/pytest-reference-cache",
+      "status": "removed",
+      "logical_bytes": 5822
+    },
+    {
+      "path": "work/repo-publication/work/pytest-reference-final",
+      "status": "removed",
+      "logical_bytes": 98760
+    },
+    {
+      "path": "work/repo-publication/work/pytest-temp",
+      "status": "removed",
+      "logical_bytes": 18198664
+    },
+    {
+      "path": "work/uv-cache",
+      "status": "removed",
+      "logical_bytes": 2299561544
+    },
+    {
+      "path": "work/venv-no-qlib",
+      "status": "removed",
+      "logical_bytes": 1541563998
+    }
+  ]
+}

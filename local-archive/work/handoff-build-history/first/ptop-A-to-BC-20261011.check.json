@@ -1,0 +1,16 @@
+{
+  "packaged_core_imports": "passed",
+  "packaged_bridge_imports": "passed",
+  "first_run_configuration": "passed",
+  "scope": "isolated unpacked package import and integrity checks",
+  "data_accessed": false,
+  "training_executed": false,
+  "archive_sha256": "20f6c3ee118386c9e6e41509d87c4e67aed9c78bd78df89e101ef64e4e04d3f9",
+  "archive_file_count": 37,
+  "crc_and_extracted_hashes": "passed",
+  "cloud_runtime_executed": false,
+  "bridge_example_synthetic_checks": {
+    "passed": 3,
+    "real_dai_accessed": false
+  }
+}

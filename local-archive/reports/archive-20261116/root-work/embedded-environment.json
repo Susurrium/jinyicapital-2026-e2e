@@ -1,0 +1,28 @@
+{
+  "qlib_commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+  "source_url": "https://github.com/microsoft/qlib/archive/54355232463878d2eebb91fe0ee5fa7fa1f5976c.zip",
+  "qlib_components_version": 1,
+  "embedded_files_sha256": {
+    "__init__.py": "6af41dff401d5e18e09bfd08d8c91458031d79a3242370f0f2c5fad15d8862ab",
+    "LICENSE": "646f8936b8ddcd14e13e578ff6857e368780b0d1a4f6066bee89211923a373e2",
+    "models.py": "a86635912fcb0ea3f275da355a8ddb9cd7431d63f20ef74034809929fcc6fd3e",
+    "processors.py": "308a88521609571934c73bccd7d38a36d775fd8a7dff8b56ef219ea5446f2e69",
+    "sampler.py": "358a8cbfaffa008c30f9b69372831dec3a9d8486e4ddeb95daa4c269d31afc9a",
+    "SOURCE.md": "b09d1d7ad0159f8587f620542be5f46202831656e3a8d2b461dced150cf94f61",
+    "utils.py": "32d74247fd0e336aafccd79c31404700f32a4f5c48f959c29fad811e78fe75a9"
+  },
+  "upstream_source_files_sha256": null,
+  "python": "3.12.10",
+  "platform": "Windows",
+  "dependencies": {
+    "torch": "2.8.0",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0",
+    "pytest": "8.4.2"
+  },
+  "official_templates_sha256": {
+    "Transformer_modelsave_train.py": "a53681c263ddc24f1a014f92ec0d7f0589cfa2a9f5fb968e5f06df6e14d0621a",
+    "Transformer_modelsave_predict.py": "8b529bd8b817070a65ea28b3d1dc6b7a37f65039103a8db97ddd5b98576b3843"
+  }
+}

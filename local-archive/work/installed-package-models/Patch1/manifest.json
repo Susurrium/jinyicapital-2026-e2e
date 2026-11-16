@@ -1,0 +1,63 @@
+{
+  "bundle_version": 2,
+  "schema_version": "ptop.raw25.v1",
+  "fields": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "amount",
+    "deal_number",
+    "bid_price1",
+    "ask_price1",
+    "bid_price2",
+    "ask_price2",
+    "bid_price3",
+    "ask_price3",
+    "bid_volume1",
+    "ask_volume1",
+    "bid_volume2",
+    "ask_volume2",
+    "bid_volume3",
+    "ask_volume3",
+    "bid_num_orders1",
+    "ask_num_orders1",
+    "bid_num_orders2",
+    "ask_num_orders2",
+    "bid_num_orders3",
+    "ask_num_orders3"
+  ],
+  "qlib_commit": "54355232463878d2eebb91fe0ee5fa7fa1f5976c",
+  "qlib_components_version": 1,
+  "dependencies": {
+    "torch": "2.8.0",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "pyarrow": "20.0.0"
+  },
+  "model_name": "Patch1",
+  "window_length": 8,
+  "contracts": {
+    "source": "synthetic",
+    "sampling": "synthetic",
+    "universe": "synthetic",
+    "visibility": "synthetic",
+    "label": "synthetic",
+    "training_scope": "synthetic"
+  },
+  "seed": 17,
+  "training_record": {
+    "scope": "installed wheel verification"
+  },
+  "instrument_map": [
+    [
+      1,
+      "SYNTHETIC"
+    ]
+  ],
+  "files": {
+    "model.json": "908e808b540b375807285592fcb5e9da8c577cdae56a5e39512d7c103f074c9b",
+    "preprocessor.json": "4cf4316ffacb12f8f881a05f2a76f443becdace6471a7bfcb956d048fdff5953"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "data_kind": "synthetic only",
+  "samples": 9,
+  "raw_rows": 33,
+  "fit_unique_rows": 33,
+  "joint_gradient_check": "passed",
+  "independent_process_reload": {
+    "status": "passed",
+    "model": "R1",
+    "samples": 9
+  },
+  "alstm_activation": {
+    "linear_abs_max": 2.047102451324463,
+    "tanh_abs_ge_0_99_fraction": 0.0
+  },
+  "processor_fingerprint": "0f5f28b9c8ad3526e37a7bd45217e02fb6c6964266a100d0c94ce36a3a3a4d4f",
+  "maximum_missing_rate": 0.0,
+  "parameters": {
+    "R0": 47297,
+    "R1": 55425,
+    "R1-Book": 53761,
+    "Net64": 82177,
+    "Net192": 139649,
+    "GroupedNet": 141185,
+    "Patch1": 55489,
+    "Patch5": 68545,
+    "DeepLOB": 135457
+  },
+  "elapsed_seconds": 10.928681999997934
+}

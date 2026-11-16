@@ -1,0 +1,24 @@
+{
+  "verified_at_utc": "2026-11-16T11:56:48.213315+00:00",
+  "original_files": 391,
+  "original_bytes": 16328167334,
+  "snapshot_files": 385,
+  "large_files": 6,
+  "release_assets": 18,
+  "release_asset_bytes": 16220097869,
+  "ordinary_file_hashes_match_original": true,
+  "all_release_sizes_and_github_sha256_digests_match": true,
+  "all_original_paths_have_storage_mapping": true,
+  "original_large_file_sizes_and_modification_times_unchanged": true,
+  "bar1m_sha256_matches_historical_audit": true,
+  "restoration_script_checks": {
+    "real_local_http_download": "passed",
+    "split_reconstruction": "passed",
+    "all_file_hashes": "passed",
+    "checksum_mismatch_rejected": "passed",
+    "existing_directory_rejected": "passed",
+    "path_traversal_rejected": "passed",
+    "scope": "Synthetic fixtures through actual localhost HTTP; no GitHub download claim"
+  },
+  "scope": "Archive file integrity and restoration; no additional financial-model or platform evaluation"
+}

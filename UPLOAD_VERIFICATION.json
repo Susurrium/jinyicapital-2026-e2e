@@ -1,0 +1,100 @@
+{
+  "checked_at_utc": "2026-11-16T11:07:45.503796+00:00",
+  "file_count_before_manifest": 174,
+  "python_source_copies_identical": 105,
+  "python_ast_passed": 105,
+  "xml_parsed": [
+    "my-part/reports/no-qlib-tests.xml",
+    "my-part/reports/test-results.xml",
+    "project/docs/qlib-reference-tests.xml"
+  ],
+  "zip_crc_checked": [
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.zip",
+      "members": 38
+    },
+    {
+      "path": "my-part/deliverables/ptop-A-to-BC-20261011.zip!ptop-A-to-BC-20261011/third_party/qlib-54355232463878d2eebb91fe0ee5fa7fa1f5976c.zip",
+      "members": 240
+    },
+    {
+      "path": "my-part/deliverables/ptop-source-20261014.zip",
+      "members": 30
+    },
+    {
+      "path": "my-part/vendor/wheels/pyqlib-0.0.0+git.54355232463878d2eebb91fe0ee5fa7fa1f5976c-cp312-cp312-win_amd64.whl",
+      "members": 293
+    },
+    {
+      "path": "project/01_比赛规则与参赛流程.docx",
+      "members": 17
+    },
+    {
+      "path": "project/02_量化名词与指标解释.docx",
+      "members": 17
+    },
+    {
+      "path": "project/03_模型架构与训练方案.docx",
+      "members": 17
+    },
+    {
+      "path": "project/04_团队分工与开发日程.docx",
+      "members": 17
+    },
+    {
+      "path": "project/端到端量化比赛入门与实施指南.docx",
+      "members": 17
+    }
+  ],
+  "broken_relative_markdown_links": [],
+  "restricted_file_or_credential_flags": [],
+  "scope": "Publication files only; no real market data accessed; no platform or financial performance validation",
+  "current_synthetic_execution": {
+    "command": "python -B tools/smoke.py --output work/synthetic-check-final",
+    "directory": "my-part",
+    "environment": "Windows x64; Python 3.12.10; PyTorch 2.8.0 CPU; existing local environment",
+    "result": {
+      "data_kind": "synthetic only",
+      "samples": 9,
+      "raw_rows": 33,
+      "fit_unique_rows": 33,
+      "joint_gradient_check": "passed",
+      "independent_process_reload": {
+        "status": "passed",
+        "model": "R1",
+        "samples": 9
+      },
+      "alstm_activation": {
+        "linear_abs_max": 2.047102451324463,
+        "tanh_abs_ge_0_99_fraction": 0.0
+      },
+      "processor_fingerprint": "0f5f28b9c8ad3526e37a7bd45217e02fb6c6964266a100d0c94ce36a3a3a4d4f",
+      "maximum_missing_rate": 0.0,
+      "parameters": {
+        "R0": 47297,
+        "R1": 55425,
+        "R1-Book": 53761,
+        "Net64": 82177,
+        "Net192": 139649,
+        "GroupedNet": 141185,
+        "Patch1": 55489,
+        "Patch5": 68545,
+        "DeepLOB": 135457
+      },
+      "elapsed_seconds": 8.53115550000075
+    }
+  },
+  "documents_and_archives": "Five DOCX XML texts and delivery ZIP documentation reviewed; no actual market samples included",
+  "git_whitespace_check": {
+    "exit_code": 2,
+    "findings": [
+      "my-part/docs/A成员数据与输入编码方案.md:479: new blank line at EOF.",
+      "my-part/pyproject.toml:32: new blank line at EOF.",
+      "my-part/src/ptop/__init__.py:4: new blank line at EOF.",
+      "my-part/vendor/licenses/gcc-libs/COPYING.LIB:509: new blank line at EOF.",
+      "my-part/vendor/licenses/gcc-libs/COPYING.RUNTIME:73: new blank line at EOF.",
+      "my-part/进益资本杯_端到端赛道说明.md:229: new blank line at EOF."
+    ],
+    "scope": "Initial archive commit; source formatting preserved; CRLF recognized as Windows line endings"
+  }
+}
